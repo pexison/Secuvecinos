@@ -223,6 +223,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WL-45-wyv">
                                 <rect key="frame" x="121" y="340" width="78" height="30"/>
                                 <state key="normal" title="Registrarse"/>
+                                <connections>
+                                    <action selector="register_proceed:" destination="wqQ-iU-BQF" eventType="touchUpInside" id="OEd-aW-xgf"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgq-6c-mJG">
                                 <rect key="frame" x="56" y="28" width="97" height="30"/>
@@ -290,6 +293,7 @@
                         <outlet property="password" destination="brd-Fd-HSv" id="SnN-5B-BQE"/>
                         <outlet property="phoneNumber" destination="jcV-4C-Yh6" id="VMe-z8-yBV"/>
                         <outlet property="user" destination="Kzi-yi-6XN" id="r0j-Hx-TXj"/>
+                        <segue destination="gM5-F2-rPF" kind="modal" identifier="SessionStartFromRegister" id="Qhz-60-hlE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOb-2l-Fyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -350,6 +354,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="MwW-EZ-3s6"/>
-        <segue reference="2GT-cl-uno"/>
+        <segue reference="Qhz-60-hlE"/>
+        <segue reference="BH5-E4-Rgc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -28,6 +28,38 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
     
     @IBOutlet weak var checkbox: UIButton!
     
+    @IBAction func register_proceed(sender: AnyObject) {
+        if status {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "Éxito",
+                message: "Se ha regitrado exitosamente",
+                preferredStyle: .Alert)
+            
+            let action = UIAlertAction(title: "Ingresar a la aplicación",
+                style: .Default,
+                handler: { action in self.performSegueWithIdentifier("SessionStartFromRegister", sender: self) })
+            
+            alertController?.addAction(action)
+            self.presentViewController(alertController!,
+                animated: true,
+                completion: nil)
+        } else {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "Alerta",
+                message: "No se han aceptado los terminos y condiciones",
+                preferredStyle: .Alert)
+            
+            let action = UIAlertAction(title: "Submit",
+                style: UIAlertActionStyle.Default,
+                handler: nil)
+            
+            alertController?.addAction(action)
+            self.presentViewController(alertController!,
+                animated: true,
+                completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          checkbox.highlighted = status;
