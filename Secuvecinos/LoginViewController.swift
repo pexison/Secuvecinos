@@ -10,14 +10,37 @@ import UIKit
 
 class LoginViewController: HideKeyBoard, UITextFieldDelegate {
     
+    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64( 4 * Double(NSEC_PER_SEC)))
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var user: UITextField!
     
     @IBOutlet weak var password: UITextField!
     
+    @IBAction func enter(sender: AnyObject) {
+        indicator.hidden = false
+        indicator.startAnimating()
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.indicator.stopAnimating()
+            self.indicator.hidden = true
+            self.performSegueWithIdentifier("SessionStart", sender: sender)
+        }
+    }
+    
+    @IBAction func facebookLogin(sender: AnyObject) {
+        enter(sender)
+    }
+    
+    @IBAction func googleLogin(sender: AnyObject) {
+        enter(sender)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.user.delegate = self;
-        self.password.delegate = self;
+        indicator.hidden = true
+        self.user.delegate = self
+        self.password.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -26,16 +49,4 @@ class LoginViewController: HideKeyBoard, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

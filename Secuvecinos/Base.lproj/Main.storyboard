@@ -83,21 +83,22 @@
                                 <rect key="frame" x="74" y="381" width="172" height="30"/>
                                 <state key="normal" title="Iniciar sesión con Google"/>
                                 <connections>
-                                    <segue destination="gM5-F2-rPF" kind="modal" id="tlm-sb-V3S"/>
+                                    <action selector="googleLogin:" destination="ooC-Qu-FUB" eventType="touchUpInside" id="0YU-Pc-HIb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-88-yUq">
                                 <rect key="frame" x="67" y="425" width="189" height="30"/>
                                 <state key="normal" title="Iniciar sesión con Facebook"/>
                                 <connections>
-                                    <segue destination="gM5-F2-rPF" kind="modal" id="1HO-Tq-g3v"/>
+                                    <action selector="facebookLogin:" destination="ooC-Qu-FUB" eventType="touchUpInside" id="cjL-id-yat"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCW-C2-6FR">
                                 <rect key="frame" x="140" y="333" width="42" height="30"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <segue destination="gM5-F2-rPF" kind="modal" id="h0x-jj-cnk"/>
+                                    <action selector="enter:" destination="ooC-Qu-FUB" eventType="touchUpInside" id="lKv-zz-DoT"/>
+                                    <segue destination="gM5-F2-rPF" kind="modal" identifier="SessionStart" id="h0x-jj-cnk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-B1-CnZ">
@@ -112,10 +113,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Qg7-eg-21j">
+                                <rect key="frame" x="150" y="111" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="Qg7-eg-21j" id="M9E-je-OOx"/>
                         <outlet property="password" destination="bU3-oQ-z25" id="XiT-dA-Y7C"/>
                         <outlet property="user" destination="8Wr-8z-bxU" id="IdQ-Sv-EsY"/>
                     </connections>
@@ -364,8 +369,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eQ1-IO-ucx"/>
         <segue reference="S3j-kO-7UD"/>
-        <segue reference="tlm-sb-V3S"/>
+        <segue reference="eQ1-IO-ucx"/>
     </inferredMetricsTieBreakers>
 </document>
