@@ -59,11 +59,12 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
                 completion: nil)
         }
     }
+    @IBAction func agreeTerms(sender: AnyObject) {
+        status = true;
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-         checkbox.highlighted = status;
-        
+        super.viewDidLoad()        
         self.name.delegate = self;
         self.id.delegate = self;
         self.email.delegate = self;

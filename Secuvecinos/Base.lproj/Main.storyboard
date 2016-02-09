@@ -260,6 +260,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNR-a6-KuR">
                                 <rect key="frame" x="5" y="302" width="148" height="30"/>
                                 <state key="normal" title="He leido y acepto los "/>
+                                <connections>
+                                    <action selector="agreeTerms:" destination="wqQ-iU-BQF" eventType="touchUpInside" id="b6j-01-WbR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-3f-YcK">
                                 <rect key="frame" x="150" y="302" width="172" height="30"/>
