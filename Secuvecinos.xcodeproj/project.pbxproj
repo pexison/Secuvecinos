@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B983A91C693E4200BDAED5 /* LogingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B983A81C693E4200BDAED5 /* LogingViewController.swift */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
 		52F61EEA1C67E178003B9C6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F61EE81C67E178003B9C6D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52B983A81C693E4200BDAED5 /* LogingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogingViewController.swift; path = ../LogingViewController.swift; sourceTree = "<group>"; };
 		52F61EE11C67E178003B9C6D /* Secuvecinos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secuvecinos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F61EE41C67E178003B9C6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F61EE61C67E178003B9C6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,9 +99,10 @@
 		52F61EE31C67E178003B9C6D /* Secuvecinos */ = {
 			isa = PBXGroup;
 			children = (
+				52B983A81C693E4200BDAED5 /* LogingViewController.swift */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
-				52F61EE61C67E178003B9C6D /* ViewController.swift */,
 				52F61EE81C67E178003B9C6D /* Main.storyboard */,
+				52F61EE61C67E178003B9C6D /* ViewController.swift */,
 				52F61EEB1C67E178003B9C6D /* Assets.xcassets */,
 				52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */,
 				52F61EF01C67E178003B9C6D /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
+				52B983A91C693E4200BDAED5 /* LogingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +489,7 @@
 				52F61F0B1C67E179003B9C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F61F0C1C67E179003B9C6D /* Build configuration list for PBXNativeTarget "SecuvecinosTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				52F61F0E1C67E179003B9C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F61F0F1C67E179003B9C6D /* Build configuration list for PBXNativeTarget "SecuvecinosUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				52F61F111C67E179003B9C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
