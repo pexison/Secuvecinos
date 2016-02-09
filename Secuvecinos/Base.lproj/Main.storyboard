@@ -298,6 +298,13 @@
                     </view>
                     <connections>
                         <outlet property="checkbox" destination="bNR-a6-KuR" id="B9S-n1-nDi"/>
+                        <outlet property="confirmPassword" destination="uMU-tM-L35" id="vgc-WJ-sCb"/>
+                        <outlet property="email" destination="YEw-OT-CRB" id="Bw1-ef-Nur"/>
+                        <outlet property="id" destination="hFe-m9-gpT" id="YFY-JT-kdX"/>
+                        <outlet property="name" destination="fgq-6c-mJG" id="voP-NH-9up"/>
+                        <outlet property="password" destination="brd-Fd-HSv" id="SnN-5B-BQE"/>
+                        <outlet property="phoneNumber" destination="jcV-4C-Yh6" id="VMe-z8-yBV"/>
+                        <outlet property="user" destination="Kzi-yi-6XN" id="r0j-Hx-TXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOb-2l-Fyv" userLabel="First Responder" sceneMemberID="firstResponder"/>

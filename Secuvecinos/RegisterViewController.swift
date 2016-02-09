@@ -8,15 +8,37 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
 
     var status = false;
     
-    @IBOutlet weak var checkbox: UIButton!
+    @IBOutlet weak var name: UITextField!
 
+    @IBOutlet weak var id: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
+    
+    @IBOutlet weak var phoneNumber: UITextField!
+   
+    @IBOutlet weak var user: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var confirmPassword: UITextField!
+    
+    @IBOutlet weak var checkbox: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          checkbox.highlighted = status;
+        
+        self.name.delegate = self;
+        self.id.delegate = self;
+        self.email.delegate = self;
+        self.phoneNumber.delegate = self;
+        self.user.delegate = self;
+        self.password.delegate = self;
+        self.confirmPassword.delegate = self;
         
         // Do any additional setup after loading the view.
     }
