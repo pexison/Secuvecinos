@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct Status {
+    static var accepted = false
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

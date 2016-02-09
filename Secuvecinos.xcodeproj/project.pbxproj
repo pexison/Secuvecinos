@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52B983A91C693E4200BDAED5 /* LogingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B983A81C693E4200BDAED5 /* LogingViewController.swift */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
 		52F61EEA1C67E178003B9C6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F61EE81C67E178003B9C6D /* Main.storyboard */; };
@@ -15,6 +14,9 @@
 		52F61EEF1C67E178003B9C6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */; };
 		52F61EFA1C67E179003B9C6D /* SecuvecinosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EF91C67E179003B9C6D /* SecuvecinosTests.swift */; };
 		52F61F051C67E179003B9C6D /* SecuvecinosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61F041C67E179003B9C6D /* SecuvecinosUITests.swift */; };
+		52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */; };
+		52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */; };
+		52FCBFBC1C6A613500A4801A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFBB1C6A613500A4801A /* TermsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52B983A81C693E4200BDAED5 /* LogingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogingViewController.swift; path = ../LogingViewController.swift; sourceTree = "<group>"; };
 		52F61EE11C67E178003B9C6D /* Secuvecinos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secuvecinos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F61EE41C67E178003B9C6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F61EE61C67E178003B9C6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		52F61F001C67E179003B9C6D /* SecuvecinosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecuvecinosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F61F041C67E179003B9C6D /* SecuvecinosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuvecinosUITests.swift; sourceTree = "<group>"; };
 		52F61F061C67E179003B9C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LostPasswordViewController.swift; path = ../LostPasswordViewController.swift; sourceTree = "<group>"; };
+		52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		52FCBFBB1C6A613500A4801A /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		52F61EE31C67E178003B9C6D /* Secuvecinos */ = {
 			isa = PBXGroup;
 			children = (
-				52B983A81C693E4200BDAED5 /* LogingViewController.swift */,
+				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
 				52F61EE81C67E178003B9C6D /* Main.storyboard */,
+				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
 				52F61EE61C67E178003B9C6D /* ViewController.swift */,
+				52FCBFBB1C6A613500A4801A /* TermsViewController.swift */,
 				52F61EEB1C67E178003B9C6D /* Assets.xcassets */,
 				52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */,
 				52F61EF01C67E178003B9C6D /* Info.plist */,
@@ -264,7 +270,9 @@
 			files = (
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
-				52B983A91C693E4200BDAED5 /* LogingViewController.swift in Sources */,
+				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
+				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
+				52FCBFBC1C6A613500A4801A /* TermsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

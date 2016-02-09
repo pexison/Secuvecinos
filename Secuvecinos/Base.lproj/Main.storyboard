@@ -60,9 +60,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-be-duV">
                                 <rect key="frame" x="194" y="482" width="90" height="30"/>
                                 <state key="normal" title="Iniciar sesión"/>
-                                <connections>
-                                    <action selector="elquetuquieras:" destination="ooC-Qu-FUB" eventType="touchUpInside" id="n8M-gx-Y7l"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNX-Ce-tqE">
                                 <rect key="frame" x="118" y="59" width="84" height="21"/>
@@ -107,7 +104,7 @@
                                 <rect key="frame" x="81" y="289" width="160" height="30"/>
                                 <state key="normal" title="¿Olvidó su contraseña?"/>
                                 <connections>
-                                    <segue destination="Ctr-uu-cag" kind="modal" id="G9j-5f-Eiq"/>
+                                    <segue destination="Ctr-uu-cag" kind="modal" id="vQU-eK-bfG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pedro.perez" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-8z-bxU">
@@ -118,18 +115,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="usuario" destination="8Wr-8z-bxU" id="0bf-IH-QlK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBy-yd-JQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="578" y="320"/>
         </scene>
-        <!--View Controller-->
+        <!--Lost Password View Controller-->
         <scene sceneID="aSt-w1-BbP">
             <objects>
-                <viewController id="Ctr-uu-cag" sceneMemberID="viewController">
+                <viewController id="Ctr-uu-cag" customClass="LostPasswordViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zic-c9-6f3"/>
                         <viewControllerLayoutGuide type="bottom" id="11C-Kc-P6a"/>
@@ -158,6 +152,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-ve-lgb">
                                 <rect key="frame" x="79" y="280" width="162" height="30"/>
                                 <state key="normal" title="Restablecer contraseña"/>
+                                <connections>
+                                    <action selector="showSentEmail:" destination="Ctr-uu-cag" eventType="touchUpInside" id="3Xm-Ie-tgC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-SK-2Vo">
                                 <rect key="frame" x="28" y="495" width="78" height="30"/>
@@ -174,10 +171,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i94-0T-bUd">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <rect key="frame" x="36" y="138" width="240" height="128"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Se envió un link a su correo electrónico con instrucciones para restablecer su contraseña." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p50-Lk-rwd">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="74"/>
+                                        <rect key="frame" x="18" y="0.0" width="205" height="74"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -186,7 +183,7 @@
                                         <rect key="frame" x="63" y="90" width="114" height="30"/>
                                         <state key="normal" title="Regresar a inicio"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="modal" id="Ij4-te-pGX"/>
+                                            <segue destination="BYZ-38-t0r" kind="modal" id="cTi-my-d1E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -195,6 +192,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="sentEmailDialog" destination="i94-0T-bUd" id="2E9-vJ-cu2"/>
+                        <outlet property="sentEmailText" destination="p50-Lk-rwd" id="IwC-iu-aCL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4M-NZ-pVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="601" y="1130"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="DYe-3S-nHl">
             <objects>
-                <viewController id="wqQ-iU-BQF" sceneMemberID="viewController">
+                <viewController id="wqQ-iU-BQF" customClass="RegisterViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uxt-ca-am1"/>
                         <viewControllerLayoutGuide type="bottom" id="MID-dk-e0X"/>
@@ -269,13 +270,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNR-a6-KuR">
-                                <rect key="frame" x="0.0" y="302" width="144" height="30"/>
-                                <state key="normal" title="He leido y acepto los"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-3f-YcK">
-                                <rect key="frame" x="152" y="302" width="168" height="30"/>
-                                <state key="normal" title="terminos de condiciones"/>
+                                <rect key="frame" x="150" y="302" width="172" height="30"/>
+                                <state key="normal" title=" terminos de condiciones"/>
+                                <connections>
+                                    <segue destination="ObM-BU-dHh" kind="modal" id="Aan-yf-ICD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuL-eu-Jr3">
                                 <rect key="frame" x="80" y="390" width="160" height="30"/>
@@ -285,18 +285,76 @@
                                 <rect key="frame" x="71" y="436" width="178" height="30"/>
                                 <state key="normal" title="Registrarse con Facebook"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNR-a6-KuR">
+                                <rect key="frame" x="5" y="302" width="148" height="30"/>
+                                <state key="normal" title="He leido y acepto los "/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="checkbox" destination="bNR-a6-KuR" id="B9S-n1-nDi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOb-2l-Fyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="1092"/>
         </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="fR7-gC-UCc">
+            <objects>
+                <viewController id="ObM-BU-dHh" customClass="TermsViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iFF-uz-WUO"/>
+                        <viewControllerLayoutGuide type="bottom" id="um6-u6-Vv4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERC-4G-izt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terminos y condiciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68h-Ji-R4B">
+                                <rect key="frame" x="70" y="33" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Prometo ser un buen ciudadano y un gran vecino." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-Fw-bRK">
+                                <rect key="frame" x="58" y="90" width="205" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-b0-A3F">
+                                <rect key="frame" x="20" y="518" width="64" height="30"/>
+                                <state key="normal" title="Rechazar"/>
+                                <connections>
+                                    <action selector="rejectBtn:" destination="ObM-BU-dHh" eventType="touchUpInside" id="bv1-1D-wGs"/>
+                                    <segue destination="wqQ-iU-BQF" kind="modal" id="BH5-E4-Rgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBL-Ve-tpl">
+                                <rect key="frame" x="246" y="518" width="54" height="30"/>
+                                <state key="normal" title="Aceptar"/>
+                                <connections>
+                                    <action selector="agreeBtn:" destination="ObM-BU-dHh" eventType="touchUpInside" id="uDv-nv-w7l"/>
+                                    <segue destination="wqQ-iU-BQF" kind="modal" id="RSt-96-ADv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="terms" destination="Xed-Fw-bRK" id="bnU-2X-NmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odh-Dp-doQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="1937"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MwW-EZ-3s6"/>
+        <segue reference="RSt-96-ADv"/>
+        <segue reference="S3j-kO-7UD"/>
         <segue reference="tlm-sb-V3S"/>
-        <segue reference="2GT-cl-uno"/>
     </inferredMetricsTieBreakers>
 </document>
