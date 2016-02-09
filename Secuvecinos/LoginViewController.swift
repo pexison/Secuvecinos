@@ -1,33 +1,41 @@
 //
-//  LogingViewController.swift
+//  LoginViewController.swift
 //  Secuvecinos
 //
-//  Created by John on 8/2/16.
+//  Created by John on 9/2/16.
 //  Copyright © 2016 John. All rights reserved.
 //
 
 import UIKit
 
-class LogingViewController: UIViewController {
-    @IBOutlet weak var usuario: UITextField!
-
-    @IBAction func elquetuquieras(sender: AnyObject) {
-    }
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var user: UITextField!
     
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.user.delegate = self;
+        self.password.delegate = self;
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 

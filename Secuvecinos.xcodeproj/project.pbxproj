@@ -17,6 +17,7 @@
 		52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */; };
 		52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */; };
 		52FCBFBC1C6A613500A4801A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFBB1C6A613500A4801A /* TermsViewController.swift */; };
+		52FCBFC01C6A691C00A4801A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LostPasswordViewController.swift; path = ../LostPasswordViewController.swift; sourceTree = "<group>"; };
 		52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52FCBFBB1C6A613500A4801A /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
+				52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
 				52F61EE81C67E178003B9C6D /* Main.storyboard */,
 				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FCBFC01C6A691C00A4801A /* LoginViewController.swift in Sources */,
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,

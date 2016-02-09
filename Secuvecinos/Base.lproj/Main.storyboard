@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="129.59999999999999" y="320.92000000000002"/>
         </scene>
-        <!--Loging View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="suF-7G-lkz">
             <objects>
-                <viewController id="ooC-Qu-FUB" customClass="LogingViewController" customModule="Secuvecinos" sceneMemberID="viewController">
+                <viewController id="ooC-Qu-FUB" customClass="LoginViewController" customModule="Secuvecinos" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ab5-Cl-dII"/>
                         <viewControllerLayoutGuide type="bottom" id="pK4-t9-rwg"/>
@@ -115,6 +115,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="bU3-oQ-z25" id="XiT-dA-Y7C"/>
+                        <outlet property="user" destination="8Wr-8z-bxU" id="IdQ-Sv-EsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBy-yd-JQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,7 +357,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RSt-96-ADv"/>
+        <segue reference="eQ1-IO-ucx"/>
         <segue reference="S3j-kO-7UD"/>
         <segue reference="tlm-sb-V3S"/>
     </inferredMetricsTieBreakers>
