@@ -107,14 +107,9 @@
 		52F61EE31C67E178003B9C6D /* Secuvecinos */ = {
 			isa = PBXGroup;
 			children = (
-				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
-				52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */,
-				52FCBFC11C6A6AF700A4801A /* HideKeyBoard.swift */,
+				52FCBFC31C6A744600A4801A /* Controllers */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
 				52F61EE81C67E178003B9C6D /* Main.storyboard */,
-				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
-				52F61EE61C67E178003B9C6D /* ViewController.swift */,
-				52FCBFBB1C6A613500A4801A /* TermsViewController.swift */,
 				52F61EEB1C67E178003B9C6D /* Assets.xcassets */,
 				52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */,
 				52F61EF01C67E178003B9C6D /* Info.plist */,
@@ -138,6 +133,19 @@
 				52F61F061C67E179003B9C6D /* Info.plist */,
 			);
 			path = SecuvecinosUITests;
+			sourceTree = "<group>";
+		};
+		52FCBFC31C6A744600A4801A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
+				52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */,
+				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
+				52FCBFC11C6A6AF700A4801A /* HideKeyBoard.swift */,
+				52F61EE61C67E178003B9C6D /* ViewController.swift */,
+				52FCBFBB1C6A613500A4801A /* TermsViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
