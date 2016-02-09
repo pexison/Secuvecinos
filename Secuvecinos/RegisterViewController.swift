@@ -49,6 +49,7 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     /*
     // MARK: - Navigation
