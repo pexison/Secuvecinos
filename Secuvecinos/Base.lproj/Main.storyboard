@@ -34,7 +34,7 @@
                                 <rect key="frame" x="114" y="390" width="92" height="21"/>
                                 <state key="normal" title="Iniciar sesión"/>
                                 <connections>
-                                    <segue destination="ooC-Qu-FUB" kind="modal" id="S3j-kO-7UD"/>
+                                    <segue destination="ooC-Qu-FUB" kind="modal" identifier="" id="S3j-kO-7UD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,31 +179,11 @@
                                     <segue destination="ooC-Qu-FUB" kind="modal" id="MwW-EZ-3s6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i94-0T-bUd">
-                                <rect key="frame" x="36" y="138" width="240" height="128"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Se envió un link a su correo electrónico con instrucciones para restablecer su contraseña." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p50-Lk-rwd">
-                                        <rect key="frame" x="18" y="0.0" width="205" height="74"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jx-g7-W85">
-                                        <rect key="frame" x="63" y="90" width="114" height="30"/>
-                                        <state key="normal" title="Regresar a inicio"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="modal" id="cTi-my-d1E"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="sentEmailDialog" destination="i94-0T-bUd" id="2E9-vJ-cu2"/>
-                        <outlet property="sentEmailText" destination="p50-Lk-rwd" id="IwC-iu-aCL"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="SegueLogin" id="CDs-WZ-z0u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4M-NZ-pVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,7 +349,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S3j-kO-7UD"/>
-        <segue reference="eQ1-IO-ucx"/>
+        <segue reference="MwW-EZ-3s6"/>
+        <segue reference="2GT-cl-uno"/>
     </inferredMetricsTieBreakers>
 </document>

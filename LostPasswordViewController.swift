@@ -9,18 +9,26 @@
 import UIKit
 
 class LostPasswordViewController: UIViewController {
-    
-    @IBOutlet weak var sentEmailDialog: UIView!
-    @IBOutlet weak var sentEmailText: UITextView!
-    
+
     @IBAction func showSentEmail(sender: AnyObject) {
-        sentEmailDialog.hidden = false;
+        var alertController:UIAlertController?
+        alertController = UIAlertController(title: "Éxito",
+            message: "Se envió un link a su correo electrónico con instrucciones para restablecer su contraseña.",
+            preferredStyle: .Alert)
+
+        let action = UIAlertAction(title: "Regresar a inicio",
+            style: .Default,
+            handler: { action in self.performSegueWithIdentifier("SegueLogin", sender: self) })
+        
+        alertController?.addAction(action)
+        self.presentViewController(alertController!,
+            animated: true,
+            completion: nil)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sentEmailText.editable = false;
-        sentEmailDialog.hidden = true;
         // Do any additional setup after loading the view.
     }
 
