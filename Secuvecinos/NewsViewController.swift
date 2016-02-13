@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import MapKit
 
 class NewsViewController: UIViewController {
     
     @IBOutlet weak var Menu: UIBarButtonItem!
+    @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,17 @@ class NewsViewController: UIViewController {
         Menu.action = Selector("revealToggle:")
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        // Map
+        let initialLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)
+        centerMapOnLocation(initialLocation)
+        
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let regionRadius: CLLocationDistance = 500
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+        MapView.setRegion(coordinateRegion, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

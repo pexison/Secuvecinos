@@ -14,6 +14,7 @@
 		5296EE081C6E37D00084CE65 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE071C6E37D00084CE65 /* NewsViewController.swift */; };
 		5296EE0A1C6E3A900084CE65 /* EmergencyCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE091C6E3A900084CE65 /* EmergencyCallViewController.swift */; };
 		5296EE0C1C6E3BB30084CE65 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE0B1C6E3BB30084CE65 /* SettingsViewController.swift */; };
+		5296EE121C6EDCF60084CE65 /* ModifyUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE111C6EDCF60084CE65 /* ModifyUserTableViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		5296EE071C6E37D00084CE65 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		5296EE091C6E3A900084CE65 /* EmergencyCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallViewController.swift; sourceTree = "<group>"; };
 		5296EE0B1C6E3BB30084CE65 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5296EE111C6EDCF60084CE65 /* ModifyUserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyUserTableViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				5296EE071C6E37D00084CE65 /* NewsViewController.swift */,
 				5296EE091C6E3A900084CE65 /* EmergencyCallViewController.swift */,
 				5296EE0B1C6E3BB30084CE65 /* SettingsViewController.swift */,
+				5296EE111C6EDCF60084CE65 /* ModifyUserTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
 				52FCBFC21C6A6AF700A4801A /* HideKeyBoard.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
+				5296EE121C6EDCF60084CE65 /* ModifyUserTableViewController.swift in Sources */,
 				5296EE061C6E36150084CE65 /* ReportEventViewController.swift in Sources */,
 				5296EE0A1C6E3A900084CE65 /* EmergencyCallViewController.swift in Sources */,
 				52FCBFBC1C6A613500A4801A /* TermsViewController.swift in Sources */,
