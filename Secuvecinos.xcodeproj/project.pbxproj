@@ -19,6 +19,8 @@
 		5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE151C6EF88A0084CE65 /* ChangeEmailViewController.swift */; };
 		5296EE181C6EF9DF0084CE65 /* ChangePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE171C6EF9DF0084CE65 /* ChangePhoneViewController.swift */; };
 		5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */; };
+		5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */; };
+		5296EE201C6F98130084CE65 /* profilePicture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5296EE1F1C6F98130084CE65 /* profilePicture.jpg */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		5296EE151C6EF88A0084CE65 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
 		5296EE171C6EF9DF0084CE65 /* ChangePhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePhoneViewController.swift; sourceTree = "<group>"; };
 		5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswordViewController.swift; path = ../ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
+		5296EE1F1C6F98130084CE65 /* profilePicture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilePicture.jpg; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -112,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5296EE211C6F98310084CE65 /* ArtWork */ = {
+			isa = PBXGroup;
+			children = (
+				5296EE1F1C6F98130084CE65 /* profilePicture.jpg */,
+			);
+			name = ArtWork;
+			sourceTree = "<group>";
+		};
 		52E9762F1C6BA08D0073277F /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		52F61EE31C67E178003B9C6D /* Secuvecinos */ = {
 			isa = PBXGroup;
 			children = (
+				5296EE211C6F98310084CE65 /* ArtWork */,
 				52E9762F1C6BA08D0073277F /* SWRevealViewController */,
 				52FCBFC31C6A744600A4801A /* Controllers */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
@@ -189,6 +202,7 @@
 				5296EDF91C6C35EA0084CE65 /* UserViewController.swift */,
 				5296EE051C6E36150084CE65 /* ReportEventViewController.swift */,
 				5296EE071C6E37D00084CE65 /* NewsViewController.swift */,
+				5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */,
 				5296EE091C6E3A900084CE65 /* EmergencyCallViewController.swift */,
 				5296EE0B1C6E3BB30084CE65 /* SettingsViewController.swift */,
 				5296EE111C6EDCF60084CE65 /* ModifyUserTableViewController.swift */,
@@ -308,6 +322,7 @@
 			files = (
 				52F61EEF1C67E178003B9C6D /* LaunchScreen.storyboard in Resources */,
 				52F61EEC1C67E178003B9C6D /* Assets.xcassets in Resources */,
+				5296EE201C6F98130084CE65 /* profilePicture.jpg in Resources */,
 				52F61EEA1C67E178003B9C6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +359,7 @@
 				5296EE0C1C6E3BB30084CE65 /* SettingsViewController.swift in Sources */,
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
 				52FCBFC21C6A6AF700A4801A /* HideKeyBoard.swift in Sources */,
+				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
 				5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */,
