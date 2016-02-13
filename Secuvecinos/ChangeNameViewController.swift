@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChangeNameViewController: UIViewController {
+class ChangeNameViewController: HideKeyBoard {
 
     override func viewDidLoad() {
         super.viewDidLoad()

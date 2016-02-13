@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LostPasswordViewController: UIViewController {
+class LostPasswordViewController: HideKeyBoard {
 
     @IBAction func showSentEmail(sender: AnyObject) {
         var alertController:UIAlertController?

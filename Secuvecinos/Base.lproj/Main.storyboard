@@ -407,10 +407,10 @@
             </objects>
             <point key="canvasLocation" x="2215" y="2529"/>
         </scene>
-        <!--View Controller-->
+        <!--Change Password View Controller-->
         <scene sceneID="Bwf-gE-KcX">
             <objects>
-                <viewController id="0BD-vD-FCE" sceneMemberID="viewController">
+                <viewController id="0BD-vD-FCE" customClass="ChangePasswordViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="stX-wa-IHs"/>
                         <viewControllerLayoutGuide type="bottom" id="Kod-QV-EPc"/>
@@ -998,9 +998,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qhz-60-hlE"/>
-        <segue reference="2GT-cl-uno"/>
+        <segue reference="h0x-jj-cnk"/>
         <segue reference="MwW-EZ-3s6"/>
+        <segue reference="eQ1-IO-ucx"/>
         <segue reference="GPK-O3-Rzf"/>
         <segue reference="3GK-20-zjK"/>
     </inferredMetricsTieBreakers>
