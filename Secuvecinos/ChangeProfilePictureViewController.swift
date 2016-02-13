@@ -42,6 +42,7 @@ class ChangeProfilePictureViewController: UIViewController, UINavigationControll
         
         presentViewController(imagePicker, animated: true, completion: nil)
     }
+
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)

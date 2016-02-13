@@ -348,27 +348,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B72-6f-6bP">
-                                <rect key="frame" x="95" y="401" width="131" height="30"/>
+                                <rect key="frame" x="95" y="367" width="131" height="30"/>
                                 <state key="normal" title="Eliminar foto actual"/>
                                 <connections>
                                     <action selector="deleteActualPhoto:" destination="0HD-RB-R3K" eventType="touchUpInside" id="qdm-ni-6F6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dq-8V-dvN">
-                                <rect key="frame" x="123" y="499" width="75" height="30"/>
-                                <state key="normal" title="Tomar foto"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-bF-V5I">
+                                <rect key="frame" x="104" y="405" width="112" height="30"/>
+                                <state key="normal" title="Seleccionar foto"/>
                                 <connections>
-                                    <action selector="takePhoto:" destination="0HD-RB-R3K" eventType="touchUpInside" id="Gu1-d4-ur7"/>
+                                    <action selector="chosePhoto:" destination="0HD-RB-R3K" eventType="touchUpInside" id="i6J-7M-apT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1A7-gn-NOG">
                                 <rect key="frame" x="40" y="109" width="240" height="240"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-bF-V5I">
-                                <rect key="frame" x="104" y="448" width="112" height="30"/>
-                                <state key="normal" title="Seleccionar foto"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPJ-rQ-afK">
+                                <rect key="frame" x="131" y="518" width="56" height="30"/>
+                                <state key="normal" title="Guardar"/>
                                 <connections>
-                                    <action selector="chosePhoto:" destination="0HD-RB-R3K" eventType="touchUpInside" id="i6J-7M-apT"/>
+                                    <segue destination="FJG-Fi-L9X" kind="push" id="PMZ-9x-yXd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dq-8V-dvN">
+                                <rect key="frame" x="123" y="443" width="75" height="30"/>
+                                <state key="normal" title="Tomar foto"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="0HD-RB-R3K" eventType="touchUpInside" id="Gu1-d4-ur7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -386,10 +393,10 @@
             </objects>
             <point key="canvasLocation" x="2706" y="2046"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Configuración-->
         <scene sceneID="fLZ-HY-W3a">
             <objects>
-                <viewController id="9s5-JY-Q5y" customClass="SettingsViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9s5-JY-Q5y" customClass="ConfigViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="92v-7r-8Nw"/>
                         <viewControllerLayoutGuide type="bottom" id="qye-g4-DF4"/>
@@ -398,20 +405,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Configuracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-th-h8g">
-                                <rect key="frame" x="106" y="210" width="108" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-b6-KgH">
+                                <rect key="frame" x="205" y="132" width="69" height="29"/>
+                                <segments>
+                                    <segment title="Mi"/>
+                                    <segment title="Km"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJ6-18-QWF">
+                                <rect key="frame" x="215" y="83" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eh-yw-rSK">
+                                <rect key="frame" x="114" y="389" width="92" height="30"/>
+                                <state key="normal" title="Cerrar sesión"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-gg-Ys7">
+                                <rect key="frame" x="126" y="444" width="69" height="30"/>
+                                <state key="normal" title="Acerca de"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuV-Uh-6Nn">
+                                <rect key="frame" x="13" y="530" width="61" height="30"/>
+                                <state key="normal" title="Cancelar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAm-mH-goW">
+                                <rect key="frame" x="250" y="530" width="54" height="30"/>
+                                <state key="normal" title="Aceptar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notificaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcP-rQ-Rka">
+                                <rect key="frame" x="25" y="88" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unidades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofX-KP-Z54">
+                                <rect key="frame" x="62" y="135" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS8-Qr-w2n">
+                                <rect key="frame" x="93" y="191" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calidad de video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJJ-0T-tVL">
+                                <rect key="frame" x="7" y="235" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-66-clY">
+                                <rect key="frame" x="156" y="136" width="148" height="131"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" selected="YES" playsSound="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VC-UE-gJB">
+                                <rect key="frame" x="156" y="180" width="148" height="131"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" selected="YES" playsSound="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PMI-iz-pWj">
+                    <navigationItem key="navigationItem" title="Configuración" id="PMI-iz-pWj">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="kHW-Ae-LdD"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="Menu" destination="kHW-Ae-LdD" id="KMc-la-VLX"/>
+                        <outlet property="themePicker" destination="gEj-66-clY" id="XJI-kA-6Ka"/>
+                        <outlet property="videoQualityPicker" destination="6VC-UE-gJB" id="Wr8-3U-uzQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iBm-eH-O3L" userLabel="First Responder" sceneMemberID="firstResponder"/>

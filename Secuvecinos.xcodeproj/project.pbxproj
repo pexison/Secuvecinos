@@ -21,6 +21,7 @@
 		5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */; };
 		5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */; };
 		5296EE201C6F98130084CE65 /* profilePicture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5296EE1F1C6F98130084CE65 /* profilePicture.jpg */; };
+		5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE221C6FA1260084CE65 /* ConfigViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswordViewController.swift; path = ../ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
 		5296EE1F1C6F98130084CE65 /* profilePicture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilePicture.jpg; sourceTree = "<group>"; };
+		5296EE221C6FA1260084CE65 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				5296EE131C6EF5650084CE65 /* ChangeNameViewController.swift */,
 				5296EE151C6EF88A0084CE65 /* ChangeEmailViewController.swift */,
 				5296EE171C6EF9DF0084CE65 /* ChangePhoneViewController.swift */,
+				5296EE221C6FA1260084CE65 /* ConfigViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
+				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,
 				5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */,
 				5296EE121C6EDCF60084CE65 /* ModifyUserTableViewController.swift in Sources */,
 				5296EE061C6E36150084CE65 /* ReportEventViewController.swift in Sources */,
