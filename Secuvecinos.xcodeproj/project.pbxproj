@@ -22,6 +22,8 @@
 		5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */; };
 		5296EE201C6F98130084CE65 /* profilePicture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5296EE1F1C6F98130084CE65 /* profilePicture.jpg */; };
 		5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE221C6FA1260084CE65 /* ConfigViewController.swift */; };
+		5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */; };
+		5296EE2F1C712E740084CE65 /* ConfigThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -70,6 +72,8 @@
 		5296EE1D1C6F90030084CE65 /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
 		5296EE1F1C6F98130084CE65 /* profilePicture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilePicture.jpg; sourceTree = "<group>"; };
 		5296EE221C6FA1260084CE65 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigUnitViewController.swift; sourceTree = "<group>"; };
+		5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigThemeViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 				5296EE151C6EF88A0084CE65 /* ChangeEmailViewController.swift */,
 				5296EE171C6EF9DF0084CE65 /* ChangePhoneViewController.swift */,
 				5296EE221C6FA1260084CE65 /* ConfigViewController.swift */,
+				5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */,
+				5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */,
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
+				5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */,
 				5296EE081C6E37D00084CE65 /* NewsViewController.swift in Sources */,
 				52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */,
 				5296EE0C1C6E3BB30084CE65 /* SettingsViewController.swift in Sources */,
@@ -368,6 +375,7 @@
 				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,
 				5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */,
 				5296EE121C6EDCF60084CE65 /* ModifyUserTableViewController.swift in Sources */,
+				5296EE2F1C712E740084CE65 /* ConfigThemeViewController.swift in Sources */,
 				5296EE061C6E36150084CE65 /* ReportEventViewController.swift in Sources */,
 				5296EE181C6EF9DF0084CE65 /* ChangePhoneViewController.swift in Sources */,
 				5296EE0A1C6E3A900084CE65 /* EmergencyCallViewController.swift in Sources */,
