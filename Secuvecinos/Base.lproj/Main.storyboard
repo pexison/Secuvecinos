@@ -1124,6 +1124,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VBm-bf-enG" kind="push" id="bD2-Iv-I3P"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1141,6 +1144,7 @@
                         <outlet property="DistanceUnit" destination="BXp-cu-iax" id="QAF-Us-t8a"/>
                         <outlet property="Menu" destination="7qS-0P-pnq" id="kAX-y6-t5O"/>
                         <outlet property="Theme" destination="YQP-ke-vaI" id="6bb-4j-VQU"/>
+                        <outlet property="VideoQuality" destination="nBl-1r-ri6" id="Yi6-BC-aij"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2j-cn-9mS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1306,6 +1310,85 @@
             </objects>
             <point key="canvasLocation" x="1683" y="454"/>
         </scene>
+        <!--Calidad de video-->
+        <scene sceneID="Ovt-6c-Qmh">
+            <objects>
+                <tableViewController id="VBm-bf-enG" customClass="ConfigVideoQualityViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oGa-67-Gd2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="eCb-Qq-bNn">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Light" textLabel="sHo-Nb-UnE" style="IBUITableViewCellStyleDefault" id="vBa-bz-daw">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vBa-bz-daw" id="09t-kP-6tq">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Alta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sHo-Nb-UnE">
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Dark" editingAccessoryType="checkmark" textLabel="75Q-eq-t5f" style="IBUITableViewCellStyleDefault" id="RWj-tS-Q99">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RWj-tS-Q99" id="9hM-ZK-MuF">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75Q-eq-t5f">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Nature" editingAccessoryType="checkmark" textLabel="igC-hz-PLr" style="IBUITableViewCellStyleDefault" id="pI5-SM-RHJ">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pI5-SM-RHJ" id="YLA-Ar-OnH">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Baja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="igC-hz-PLr">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="VBm-bf-enG" id="9rB-DA-7Z8"/>
+                            <outlet property="delegate" destination="VBm-bf-enG" id="6oI-cT-Acj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Calidad de video" id="ZZt-uM-SNm"/>
+                    <connections>
+                        <segue destination="9Ya-7U-AV1" kind="push" identifier="VideoQualitySelected" id="2KI-X8-xUU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei4-qN-IhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="4029"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="SC6-qh-wfz"/>
@@ -1313,6 +1396,6 @@
         <segue reference="MwW-EZ-3s6"/>
         <segue reference="eQ1-IO-ucx"/>
         <segue reference="GPK-O3-Rzf"/>
-        <segue reference="jYD-0a-BCF"/>
+        <segue reference="2KI-X8-xUU"/>
     </inferredMetricsTieBreakers>
 </document>

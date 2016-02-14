@@ -16,10 +16,12 @@ class ConfigViewController: UITableViewController {
     
     @IBOutlet weak var Theme: UILabel!
     
+    @IBOutlet weak var VideoQuality: UILabel!
     
     var TableArray = [String]()
     var selectedDistanceUnit = "km"
     var selectedTheme = "Light"
+    var selectedVideoQuality = "Alta"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,8 @@ class ConfigViewController: UITableViewController {
 
         DistanceUnit.text = selectedDistanceUnit
         Theme.text = selectedTheme
+        
+        VideoQuality.text = selectedVideoQuality;
         
     }
     
