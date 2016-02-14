@@ -13,8 +13,13 @@ class ConfigViewController: UITableViewController {
     @IBOutlet weak var Menu: UIBarButtonItem!
 
     @IBOutlet weak var DistanceUnit: UILabel!
+    
+    @IBOutlet weak var Theme: UILabel!
+    
+    
     var TableArray = [String]()
     var selectedDistanceUnit = "km"
+    var selectedTheme = "Light"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,7 @@ class ConfigViewController: UITableViewController {
         TableArray = ["Notificaciones", "Unidades", "Tema", "Calidad de Video"]
 
         DistanceUnit.text = selectedDistanceUnit
+        Theme.text = selectedTheme
         
     }
     

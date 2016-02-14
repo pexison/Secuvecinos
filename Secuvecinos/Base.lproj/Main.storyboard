@@ -1097,6 +1097,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cDS-lb-JPN" kind="push" id="dFs-Wg-NBs"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Calidad de Video" textLabel="MUO-wW-fBj" detailTextLabel="nBl-1r-ri6" style="IBUITableViewCellStyleValue1" id="69T-JT-ou8">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -1137,6 +1140,7 @@
                     <connections>
                         <outlet property="DistanceUnit" destination="BXp-cu-iax" id="QAF-Us-t8a"/>
                         <outlet property="Menu" destination="7qS-0P-pnq" id="kAX-y6-t5O"/>
+                        <outlet property="Theme" destination="YQP-ke-vaI" id="6bb-4j-VQU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2j-cn-9mS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1198,19 +1202,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Unidades" id="emB-wP-GOk"/>
                     <connections>
-                        <outlet property="selectKm" destination="pza-9l-3A1" id="Lsj-IT-ExC"/>
-                        <outlet property="selectMi" destination="1WB-kz-IGp" id="11H-Oa-mFf"/>
                         <segue destination="9Ya-7U-AV1" kind="push" identifier="DistanceUnitSelected" id="jYD-0a-BCF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0Q-At-s7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2668" y="3206"/>
+            <point key="canvasLocation" x="2850" y="3206"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Tema-->
         <scene sceneID="hPX-ze-jFr">
             <objects>
-                <tableViewController id="cDS-lb-JPN" sceneMemberID="viewController">
+                <tableViewController id="cDS-lb-JPN" customClass="ConfigThemeViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e03-Zf-lVy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1219,7 +1221,7 @@
                             <tableViewSection id="b1K-LR-4m2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Light" textLabel="Kxk-Ft-KBa" style="IBUITableViewCellStyleDefault" id="kU3-rt-5PL">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kU3-rt-5PL" id="ZSg-Lg-RhZ">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
@@ -1236,7 +1238,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Dark" editingAccessoryType="checkmark" textLabel="sef-d5-Jan" style="IBUITableViewCellStyleDefault" id="QrT-Sj-P2r">
-                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QrT-Sj-P2r" id="5p8-QL-2in">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1253,7 +1255,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Nature" editingAccessoryType="checkmark" textLabel="6OB-It-qwq" style="IBUITableViewCellStyleDefault" id="bjc-mR-MGr">
-                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bjc-mR-MGr" id="6F9-mO-9vo">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1277,10 +1279,14 @@
                             <outlet property="delegate" destination="cDS-lb-JPN" id="ir5-lY-XPq"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Tema" id="X3x-iO-iMg"/>
+                    <connections>
+                        <segue destination="9Ya-7U-AV1" kind="push" identifier="ThemeSelected" id="lit-P2-Zd2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erZ-3P-rr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2668" y="3900"/>
+            <point key="canvasLocation" x="2215" y="4046"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oDl-t9-2nD">
