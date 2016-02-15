@@ -49,7 +49,7 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
                 message: "No se han aceptado los terminos y condiciones",
                 preferredStyle: .Alert)
             
-            let action = UIAlertAction(title: "Submit",
+            let action = UIAlertAction(title: "Ok",
                 style: UIAlertActionStyle.Default,
                 handler: nil)
             

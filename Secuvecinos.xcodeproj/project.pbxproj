@@ -25,6 +25,7 @@
 		5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */; };
 		5296EE2F1C712E740084CE65 /* ConfigThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */; };
 		5296EE311C71396F0084CE65 /* ConfigVideoQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE301C71396F0084CE65 /* ConfigVideoQualityViewController.swift */; };
+		5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE321C7144E90084CE65 /* EmergencyCallVideoViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -76,6 +77,7 @@
 		5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigUnitViewController.swift; sourceTree = "<group>"; };
 		5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigThemeViewController.swift; sourceTree = "<group>"; };
 		5296EE301C71396F0084CE65 /* ConfigVideoQualityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigVideoQualityViewController.swift; sourceTree = "<group>"; };
+		5296EE321C7144E90084CE65 /* EmergencyCallVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallVideoViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
 				52FCBFC11C6A6AF700A4801A /* HideKeyBoard.swift */,
 				52F61EE61C67E178003B9C6D /* ViewController.swift */,
+				5296EE321C7144E90084CE65 /* EmergencyCallVideoViewController.swift */,
 				52FCBFBB1C6A613500A4801A /* TermsViewController.swift */,
 				5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */,
 				5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */,
@@ -374,6 +377,7 @@
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
 				52FCBFC21C6A6AF700A4801A /* HideKeyBoard.swift in Sources */,
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
+				5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */,
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
 				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,

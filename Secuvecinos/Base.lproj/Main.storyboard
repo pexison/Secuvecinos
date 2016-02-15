@@ -334,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gB8-p1-AZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="1808"/>
+            <point key="canvasLocation" x="2233" y="1820"/>
         </scene>
         <!--Cambiar foto de perfil-->
         <scene sceneID="XEh-jj-yJe">
@@ -392,11 +392,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0S-xM-Ddy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="2046"/>
+            <point key="canvasLocation" x="3584" y="390"/>
         </scene>
-        <!--Emergency Call View Controller-->
+        <!--Conectado con emergencias-->
         <scene sceneID="vzH-GM-lX1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLR-TW-KKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jAE-en-ni2" customClass="EmergencyCallViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TD0-1y-RoV"/>
@@ -406,8 +407,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Llamar a emergencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zp-i1-7gv">
-                                <rect key="frame" x="76" y="222" width="168" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solo audio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zp-i1-7gv">
+                                <rect key="frame" x="120" y="93" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -420,19 +421,43 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv3-VK-ND7">
+                                <rect key="frame" x="137" y="508" width="46" height="30"/>
+                                <state key="normal" title="Colgar"/>
+                                <connections>
+                                    <action selector="hangUpVoiceCall:" destination="jAE-en-ni2" eventType="touchUpInside" id="aKe-Y1-dND"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMG-Hr-fL5">
+                                <rect key="frame" x="80" y="182" width="161" height="30"/>
+                                <state key="normal" title="Habilitar envio de video"/>
+                                <connections>
+                                    <segue destination="tam-d5-4rc" kind="push" id="Ipi-1o-hsP"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-39-raP">
+                                <rect key="frame" x="101" y="258" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ubicación actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNq-Zg-NDL">
+                                <rect key="frame" x="96" y="306" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sfd-QS-zDd">
+                                <rect key="frame" x="40" y="347" width="240" height="128"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5Oh-cc-H5l">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="pfI-lW-ipE"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Conectado con emergencias" id="5Oh-cc-H5l"/>
                     <connections>
-                        <outlet property="Menu" destination="fHn-O3-1DK" id="ri2-xz-ven"/>
+                        <outlet property="MapView" destination="sfd-QS-zDd" id="RbF-a3-hHC"/>
+                        <segue destination="Ki1-6Z-n4a" kind="push" identifier="HangUpAudioCall" id="lAu-pS-3Qg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xLR-TW-KKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="2529"/>
+            <point key="canvasLocation" x="2233" y="2536"/>
         </scene>
         <!--Cambiar contraseña-->
         <scene sceneID="Bwf-gE-KcX">
@@ -490,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uh-Sy-wwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="1409"/>
+            <point key="canvasLocation" x="3184" y="253"/>
         </scene>
         <!--Noticias-->
         <scene sceneID="wqy-91-sIk">
@@ -561,7 +586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fci-KB-j3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="718"/>
+            <point key="canvasLocation" x="3712" y="-470"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="DYe-3S-nHl">
@@ -656,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOb-2l-Fyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="1092"/>
+            <point key="canvasLocation" x="143" y="1094"/>
         </scene>
         <!--Terms View Controller-->
         <scene sceneID="fR7-gC-UCc">
@@ -910,7 +935,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19W-fn-a5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="50"/>
+            <point key="canvasLocation" x="3212" y="-645"/>
         </scene>
         <!--Nombre-->
         <scene sceneID="YSg-DU-a3N">
@@ -975,6 +1000,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0A5-11-SLK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28a-8K-EXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OyB-fr-yCs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6u-3z-UyZ">
@@ -986,7 +1012,6 @@
                         <segue destination="jAE-en-ni2" kind="relationship" relationship="rootViewController" id="e1j-yv-oqN"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="28a-8K-EXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1683" y="2529"/>
         </scene>
@@ -1290,7 +1315,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erZ-3P-rr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="4046"/>
+            <point key="canvasLocation" x="1683" y="4022"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oDl-t9-2nD">
@@ -1387,15 +1412,72 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ei4-qN-IhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="4029"/>
+            <point key="canvasLocation" x="2850" y="3965"/>
+        </scene>
+        <!--Emergency Call Video View Controller-->
+        <scene sceneID="UpI-fM-6dX">
+            <objects>
+                <viewController id="tam-d5-4rc" customClass="EmergencyCallVideoViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wWO-Fd-xQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="awM-Si-8aW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eZl-9d-oYi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio y video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyT-Rw-YZY">
+                                <rect key="frame" x="109" y="95" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RBX-LR-DR0">
+                                <rect key="frame" x="40" y="355" width="240" height="128"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apT-4Q-TKO">
+                                <rect key="frame" x="137" y="511" width="46" height="30"/>
+                                <state key="normal" title="Colgar"/>
+                                <connections>
+                                    <action selector="hangUpVideoCall:" destination="tam-d5-4rc" eventType="touchUpInside" id="hnf-uE-H2i"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kDL-nN-vvs">
+                                <rect key="frame" x="101" y="261" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ubicación actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uF-Hz-m3p">
+                                <rect key="frame" x="96" y="312" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conectado con emergencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwO-OM-Upd">
+                                <rect key="frame" x="50" y="28" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GMF-iI-fDU"/>
+                    <connections>
+                        <outlet property="MapView" destination="RBX-LR-DR0" id="uWN-mC-AIJ"/>
+                        <segue destination="Ki1-6Z-n4a" kind="push" identifier="HangUpVideoCall" id="iDl-Ag-W0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hy5-6R-Vei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2722" y="2529"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SC6-qh-wfz"/>
-        <segue reference="h0x-jj-cnk"/>
-        <segue reference="MwW-EZ-3s6"/>
-        <segue reference="eQ1-IO-ucx"/>
+        <segue reference="PMZ-9x-yXd"/>
+        <segue reference="Qhz-60-hlE"/>
+        <segue reference="RSt-96-ADv"/>
         <segue reference="GPK-O3-Rzf"/>
-        <segue reference="2KI-X8-xUU"/>
+        <segue reference="iDl-Ag-W0g"/>
+        <segue reference="5VZ-XX-2vh"/>
+        <segue reference="MwW-EZ-3s6"/>
     </inferredMetricsTieBreakers>
 </document>
