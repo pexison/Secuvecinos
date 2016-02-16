@@ -41,7 +41,7 @@ class EmergencyCallVideoViewController: UIViewController {
         // Map
         let initialLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)
         centerMapOnLocation(initialLocation)
-        
+        self.navigationItem.hidesBackButton = true
     }
     
     func centerMapOnLocation(location: CLLocation) {
