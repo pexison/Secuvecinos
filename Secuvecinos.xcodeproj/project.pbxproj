@@ -147,7 +147,6 @@
 		5296EE211C6F98310084CE65 /* ArtWork */ = {
 			isa = PBXGroup;
 			children = (
-				5296EE1F1C6F98130084CE65 /* profilePicture.jpg */,
 			);
 			name = ArtWork;
 			sourceTree = "<group>";
@@ -190,6 +189,7 @@
 				52FCBFC31C6A744600A4801A /* Controllers */,
 				52F61EE41C67E178003B9C6D /* AppDelegate.swift */,
 				52F61EE81C67E178003B9C6D /* Main.storyboard */,
+				5296EE1F1C6F98130084CE65 /* profilePicture.jpg */,
 				52F61EEB1C67E178003B9C6D /* Assets.xcassets */,
 				52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */,
 				52F61EF01C67E178003B9C6D /* Info.plist */,

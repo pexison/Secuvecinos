@@ -13,6 +13,8 @@ class EmergencyCallVideoViewController: UIViewController {
     
     @IBOutlet weak var MapView: MKMapView!
     
+    @IBOutlet weak var VideoImage: UIImageView!
+    
     @IBAction func hangUpVideoCall(sender: AnyObject) {
         var alertController:UIAlertController?
         alertController = UIAlertController(title: "Alerta",
@@ -42,6 +44,8 @@ class EmergencyCallVideoViewController: UIViewController {
         let initialLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)
         centerMapOnLocation(initialLocation)
         self.navigationItem.hidesBackButton = true
+        
+        self.VideoImage.image = UIImage(named: "profilePicture")
     }
     
     func centerMapOnLocation(location: CLLocation) {
