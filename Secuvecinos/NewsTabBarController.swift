@@ -13,6 +13,8 @@ class NewsTabBarController: UITabBarController {
     
     @IBOutlet weak var Menu: UIBarButtonItem!
     
+    @IBOutlet weak var AddEvent: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

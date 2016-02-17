@@ -629,7 +629,6 @@
                                 <state key="normal" title="Colgar" image="hangup_call"/>
                                 <connections>
                                     <action selector="hangUpVoiceCall:" destination="jAE-en-ni2" eventType="touchUpInside" id="aKe-Y1-dND"/>
-                                    <segue destination="WtK-AX-dUN" kind="modal" identifier="HangUpAudioCall" id="H4B-qw-bD9"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-39-raP">
@@ -652,6 +651,7 @@
                     <navigationItem key="navigationItem" title="Conectado con emergencias" id="5Oh-cc-H5l"/>
                     <connections>
                         <outlet property="MapView" destination="sfd-QS-zDd" id="RbF-a3-hHC"/>
+                        <segue destination="k69-jd-1Oc" kind="custom" identifier="HangUpAudioCall" customClass="SWRevealViewControllerSeguePushController" id="IhE-Qh-IkR"/>
                     </connections>
                 </viewController>
             </objects>
@@ -721,6 +721,11 @@
                 <tabBarController id="WtK-AX-dUN" customClass="NewsTabBarController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Noticias" id="Bav-oo-Ba7">
                         <barButtonItem key="leftBarButtonItem" image="menu_filled_blue_25" id="8qE-zD-uZY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qxz-JA-nf8">
+                            <connections>
+                                <segue destination="D9J-mJ-zkP" kind="modal" id="oA4-J5-zPi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lHm-T9-b1J">
@@ -729,6 +734,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="AddEvent" destination="qxz-JA-nf8" id="MQa-Xe-nFn"/>
                         <outlet property="Menu" destination="8qE-zD-uZY" id="Z5t-7n-UsJ"/>
                         <segue destination="A0G-nD-Wnp" kind="relationship" relationship="viewControllers" id="Haq-Bf-lup"/>
                         <segue destination="1Gx-R3-eL6" kind="relationship" relationship="viewControllers" id="gFT-cB-Isp"/>
@@ -1801,7 +1807,6 @@
                                 <state key="normal" title="Colgar" image="hangup_call"/>
                                 <connections>
                                     <action selector="hangUpVideoCall:" destination="tam-d5-4rc" eventType="touchUpInside" id="hnf-uE-H2i"/>
-                                    <segue destination="WtK-AX-dUN" kind="modal" identifier="HangUpVideoCall" id="hKf-cc-uWR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1812,6 +1817,7 @@
                     <connections>
                         <outlet property="MapView" destination="RBX-LR-DR0" id="uWN-mC-AIJ"/>
                         <outlet property="VideoImage" destination="YdR-FE-oqk" id="FsG-Yx-LIE"/>
+                        <segue destination="k69-jd-1Oc" kind="custom" identifier="HangUpVideoCall" customClass="SWRevealViewControllerSeguePushController" id="MGY-cg-ZEW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hy5-6R-Vei" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1831,10 +1837,10 @@
         <segue reference="h0x-jj-cnk"/>
         <segue reference="MwW-EZ-3s6"/>
         <segue reference="eQ1-IO-ucx"/>
-        <segue reference="bBG-lQ-FJ5"/>
         <segue reference="Vfe-Pw-d2t"/>
         <segue reference="8Jl-Zw-Ye6"/>
-        <segue reference="hKf-cc-uWR"/>
+        <segue reference="IhE-Qh-IkR"/>
+        <segue reference="oA4-J5-zPi"/>
         <segue reference="jYD-0a-BCF"/>
     </inferredMetricsTieBreakers>
 </document>
