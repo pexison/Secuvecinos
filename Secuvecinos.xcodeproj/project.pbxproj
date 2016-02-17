@@ -28,6 +28,13 @@
 		5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE321C7144E90084CE65 /* EmergencyCallVideoViewController.swift */; };
 		5296EE3B1C716AA80084CE65 /* NewsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE3A1C716AA80084CE65 /* NewsMapViewController.swift */; };
 		5296EE3D1C72F1F10084CE65 /* NewsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE3C1C72F1F10084CE65 /* NewsTabBarController.swift */; };
+		5296EE471C72FABB0084CE65 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE461C72FABB0084CE65 /* NewsListTableViewController.swift */; };
+		5296EE4D1C741D610084CE65 /* NewsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE4C1C741D610084CE65 /* NewsEventCell.swift */; };
+		5296EE531C7420A40084CE65 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE521C7420A40084CE65 /* EventTableViewController.swift */; };
+		5296EE551C74235C0084CE65 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE541C74235C0084CE65 /* Event.swift */; };
+		5296EE571C7446740084CE65 /* Event1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE561C7446740084CE65 /* Event1ViewController.swift */; };
+		5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE581C745AC40084CE65 /* MapEvent.swift */; };
+		5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -82,6 +89,13 @@
 		5296EE321C7144E90084CE65 /* EmergencyCallVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallVideoViewController.swift; sourceTree = "<group>"; };
 		5296EE3A1C716AA80084CE65 /* NewsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsMapViewController.swift; sourceTree = "<group>"; };
 		5296EE3C1C72F1F10084CE65 /* NewsTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTabBarController.swift; sourceTree = "<group>"; };
+		5296EE461C72FABB0084CE65 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		5296EE4C1C741D610084CE65 /* NewsEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsEventCell.swift; sourceTree = "<group>"; };
+		5296EE521C7420A40084CE65 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ../EventTableViewController.swift; sourceTree = "<group>"; };
+		5296EE541C74235C0084CE65 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5296EE561C7446740084CE65 /* Event1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event1ViewController.swift; sourceTree = "<group>"; };
+		5296EE581C745AC40084CE65 /* MapEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEvent.swift; sourceTree = "<group>"; };
+		5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event2ViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -224,11 +238,18 @@
 				5296EE131C6EF5650084CE65 /* ChangeNameViewController.swift */,
 				5296EE151C6EF88A0084CE65 /* ChangeEmailViewController.swift */,
 				5296EE171C6EF9DF0084CE65 /* ChangePhoneViewController.swift */,
+				5296EE4C1C741D610084CE65 /* NewsEventCell.swift */,
+				5296EE521C7420A40084CE65 /* EventTableViewController.swift */,
+				5296EE541C74235C0084CE65 /* Event.swift */,
 				5296EE221C6FA1260084CE65 /* ConfigViewController.swift */,
 				5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */,
+				5296EE581C745AC40084CE65 /* MapEvent.swift */,
 				5296EE2E1C712E740084CE65 /* ConfigThemeViewController.swift */,
 				5296EE301C71396F0084CE65 /* ConfigVideoQualityViewController.swift */,
+				5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */,
+				5296EE561C7446740084CE65 /* Event1ViewController.swift */,
 				5296EE3A1C716AA80084CE65 /* NewsMapViewController.swift */,
+				5296EE461C72FABB0084CE65 /* NewsListTableViewController.swift */,
 				5296EE3C1C72F1F10084CE65 /* NewsTabBarController.swift */,
 			);
 			name = Controllers;
@@ -377,6 +398,7 @@
 				5296EE311C71396F0084CE65 /* ConfigVideoQualityViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
 				5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */,
+				5296EE551C74235C0084CE65 /* Event.swift in Sources */,
 				5296EE3B1C716AA80084CE65 /* NewsMapViewController.swift in Sources */,
 				5296EE081C6E37D00084CE65 /* NewsViewController.swift in Sources */,
 				52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */,
@@ -386,6 +408,9 @@
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */,
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
+				5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */,
+				5296EE4D1C741D610084CE65 /* NewsEventCell.swift in Sources */,
+				5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
 				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,
 				5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */,
@@ -396,7 +421,10 @@
 				5296EE0A1C6E3A900084CE65 /* EmergencyCallViewController.swift in Sources */,
 				5296EE141C6EF5650084CE65 /* ChangeNameViewController.swift in Sources */,
 				5296EE3D1C72F1F10084CE65 /* NewsTabBarController.swift in Sources */,
+				5296EE471C72FABB0084CE65 /* NewsListTableViewController.swift in Sources */,
+				5296EE531C7420A40084CE65 /* EventTableViewController.swift in Sources */,
 				52FCBFBC1C6A613500A4801A /* TermsViewController.swift in Sources */,
+				5296EE571C7446740084CE65 /* Event1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
