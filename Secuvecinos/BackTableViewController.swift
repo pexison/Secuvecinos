@@ -13,7 +13,7 @@ class BackTableViewController: UITableViewController {
     var TableArray = [String]()
     
     override func viewDidLoad() {
-        TableArray = ["Usuario","Noticias","Reportar evento","Llamar a emergencias", "Configuración", "Cerrar sesión"]
+        TableArray = ["Usuario","Noticias","Llamar a emergencias", "Configuración", "Cerrar sesión"]
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
