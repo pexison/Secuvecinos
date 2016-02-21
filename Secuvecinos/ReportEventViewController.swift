@@ -23,6 +23,7 @@ class ReportEventViewController: UITableViewController {
     }
     
     var TableArray = [String]()
+    var urgencySelected = "Media"
     
     func showAlert(sender: AnyObject, title: String, message: String) {
     
@@ -59,6 +60,7 @@ class ReportEventViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         TableArray = ["Tipo", "Nombre", "Descripción", "Urgencia", "Posición"]
+        
         
     }
     

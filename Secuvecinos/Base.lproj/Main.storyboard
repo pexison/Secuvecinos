@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztk-xS-5ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="1130"/>
+            <point key="canvasLocation" x="760" y="2376"/>
         </scene>
         <!--Back Table View Controller-->
         <scene sceneID="zIz-7J-65w">
@@ -314,7 +314,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Tipo" id="cc9-IE-yv3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Tipo" id="cc9-IE-yv3" customClass="ReportEventCell" customModule="Secuvecinos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc9-IE-yv3" id="Rbj-Y1-hP3">
@@ -327,13 +327,20 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-IG-sP3">
+                                            <rect key="frame" x="237" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="type" destination="Dpl-IG-sP3" id="SmH-eQ-BzH"/>
                                     <segue destination="6FR-Ew-0UW" kind="modal" id="PCt-qB-pPa"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Nombre" id="M1i-xJ-b5B">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Nombre" id="M1i-xJ-b5B" customClass="ReportEventCell" customModule="Secuvecinos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="136" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1i-xJ-b5B" id="POo-TX-Rhh">
@@ -346,13 +353,20 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icE-Zd-Co6">
+                                            <rect key="frame" x="249" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="name" destination="icE-Zd-Co6" id="2EK-Pv-Ea4"/>
                                     <segue destination="MmN-O4-HRu" kind="modal" id="snN-Z4-dIH"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Descripción" id="uCe-fd-oCI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Descripción" id="uCe-fd-oCI" customClass="ReportEventCell" customModule="Secuvecinos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="180" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uCe-fd-oCI" id="X8d-OP-XQE">
@@ -365,13 +379,21 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcy-qd-2eW">
+                                            <rect key="frame" x="248" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="details" destination="Dcy-qd-2eW" id="NkY-RO-BHo"/>
+                                    <outlet property="name" destination="Dcy-qd-2eW" id="lTG-s8-3gs"/>
                                     <segue destination="ISN-Pa-Dh3" kind="modal" id="Gsx-Cc-cTx"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Urgencia" id="kWl-gn-EjT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Urgencia" id="kWl-gn-EjT" customClass="ReportEventCell" customModule="Secuvecinos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="224" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kWl-gn-EjT" id="eUu-y7-X9Z">
@@ -384,13 +406,20 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9H-a2-el2">
+                                            <rect key="frame" x="248" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="urgency" destination="i9H-a2-el2" id="l8M-3O-IPQ"/>
                                     <segue destination="3aF-il-A79" kind="modal" id="INe-4F-4YP"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Posición" id="oS5-Fv-Baa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Posición" id="oS5-Fv-Baa" customClass="ReportEventCell" customModule="Secuvecinos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="268" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oS5-Fv-Baa" id="r7H-gD-kFh">
@@ -434,7 +463,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOf-X3-WRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717" y="2219"/>
+            <point key="canvasLocation" x="2717" y="2299"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="610-1l-Srw">
@@ -496,10 +525,10 @@
             </objects>
             <point key="canvasLocation" x="3179" y="1814"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Urgency Selector View Controller-->
         <scene sceneID="3tV-hr-z6e">
             <objects>
-                <tableViewController id="3aF-il-A79" sceneMemberID="viewController">
+                <tableViewController id="3aF-il-A79" customClass="UrgencySelectorViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kEY-ZG-TN4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -528,9 +557,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Eje-C7-rxt" kind="modal" id="b4U-fY-nQf"/>
-                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Vuj-dh-hlh">
                                 <rect key="frame" x="0.0" y="116" width="320" height="44"/>
@@ -575,10 +601,10 @@
             </objects>
             <point key="canvasLocation" x="3608" y="1937"/>
         </scene>
-        <!--View Controller-->
+        <!--Hide Key Board-->
         <scene sceneID="awh-Ij-hB3">
             <objects>
-                <viewController id="ISN-Pa-Dh3" sceneMemberID="viewController">
+                <viewController id="ISN-Pa-Dh3" customClass="HideKeyBoard" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uk3-kQ-UaD"/>
                         <viewControllerLayoutGuide type="bottom" id="Gyn-ET-Xcf"/>
@@ -594,6 +620,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-Ux-tqJ">
+                                <rect key="frame" x="103" y="504" width="114" height="30"/>
+                                <state key="normal" title="Terminar edición"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="084-rN-N0b">
+                                <rect key="frame" x="13" y="34" width="295" height="120"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Inserte la descripción asociada al evento a reportar">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -602,10 +645,10 @@
             </objects>
             <point key="canvasLocation" x="3976" y="2145"/>
         </scene>
-        <!--View Controller-->
+        <!--Report Event Map View Controller-->
         <scene sceneID="PGY-FZ-f91">
             <objects>
-                <viewController id="7ci-uA-56X" sceneMemberID="viewController">
+                <viewController id="7ci-uA-56X" customClass="ReportEventMapViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N7C-3i-EHO"/>
                         <viewControllerLayoutGuide type="bottom" id="K0a-nq-eDl"/>
@@ -615,20 +658,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4Zn-fh-CrG">
-                                <rect key="frame" x="49" y="197" width="240" height="128"/>
+                                <rect key="frame" x="9" y="144" width="301" height="212"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y57-vP-R13">
+                                <rect key="frame" x="97" y="501" width="126" height="30"/>
+                                <state key="normal" title="Guardar ubicación"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygz-N7-cll">
+                                <rect key="frame" x="27" y="28" width="265" height="120"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Seleccione la ubicación del evento">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="MapView" destination="4Zn-fh-CrG" id="jBQ-nu-qd9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWJ-t4-qTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2940" y="2994"/>
+            <point key="canvasLocation" x="2743" y="3036"/>
         </scene>
-        <!--View Controller-->
+        <!--Hide Key Board-->
         <scene sceneID="M6Z-g1-ncf">
             <objects>
-                <viewController id="MmN-O4-HRu" sceneMemberID="viewController">
+                <viewController id="MmN-O4-HRu" customClass="HideKeyBoard" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sui-5H-0jq"/>
                         <viewControllerLayoutGuide type="bottom" id="5OK-US-sPX"/>
@@ -638,10 +701,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre evento" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1o-PB-0IX">
-                                <rect key="frame" x="118" y="177" width="121" height="30"/>
+                                <rect key="frame" x="100" y="177" width="121" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-IQ-kig">
+                                <rect key="frame" x="48" y="39" width="225" height="120"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ingrese el nombre del evento">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPA-Pm-JdT">
+                                <rect key="frame" x="103" y="504" width="114" height="30"/>
+                                <state key="normal" title="Terminar edición"/>
+                                <connections>
+                                    <segue destination="Eje-C7-rxt" kind="push" id="obm-v3-yad"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -905,7 +988,6 @@
         <!--Conectado con emergencias-->
         <scene sceneID="vzH-GM-lX1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xLR-TW-KKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jAE-en-ni2" customClass="EmergencyCallViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TD0-1y-RoV"/>
@@ -956,6 +1038,7 @@
                         <segue destination="k69-jd-1Oc" kind="custom" identifier="HangUpAudioCall" customClass="SWRevealViewControllerSeguePushController" id="IhE-Qh-IkR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLR-TW-KKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1637" y="2145"/>
         </scene>
@@ -1395,7 +1478,6 @@
         <!--Modificar datos-->
         <scene sceneID="p1E-1y-Dpz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BXL-1r-NnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="FJG-Fi-L9X" customClass="UserViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lCj-tn-YCf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1403,7 +1485,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Nombre" textLabel="DEG-fW-xaI" detailTextLabel="e2d-X2-PoD" style="IBUITableViewCellStyleValue1" id="wig-Fl-kDD">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wig-Fl-kDD" id="zaG-h3-bap">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1430,7 +1512,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Correo" textLabel="qky-E3-aR9" detailTextLabel="kRa-p2-Rj8" style="IBUITableViewCellStyleValue1" id="6gJ-f6-HPX">
-                                <rect key="frame" x="0.0" y="136" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6gJ-f6-HPX" id="3NN-ON-ZMP">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1457,7 +1539,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Teléfono" textLabel="3As-MZ-Zpc" detailTextLabel="OLe-D4-CrN" style="IBUITableViewCellStyleValue1" id="Bu3-yH-mir">
-                                <rect key="frame" x="0.0" y="180" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bu3-yH-mir" id="kxe-cb-zL0">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1484,7 +1566,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Contraseña" textLabel="QYB-gS-fyc" style="IBUITableViewCellStyleDefault" id="AUc-fF-XIH">
-                                <rect key="frame" x="0.0" y="224" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AUc-fF-XIH" id="7Di-xU-jnp">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1504,7 +1586,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Seleccionar Foto" textLabel="w8N-wy-klD" style="IBUITableViewCellStyleDefault" id="y9a-ex-nhO">
-                                <rect key="frame" x="0.0" y="268" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="204" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y9a-ex-nhO" id="fKw-s5-FpJ">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1536,6 +1618,7 @@
                         <outlet property="Menu" destination="5Gt-Yh-muZ" id="cAw-mb-K8i"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXL-1r-NnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2207" y="454"/>
         </scene>
@@ -1654,12 +1737,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-rH-AHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717" y="1492"/>
+            <point key="canvasLocation" x="2717" y="1514"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0A5-11-SLK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="28a-8K-EXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OyB-fr-yCs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6u-3z-UyZ">
@@ -1671,8 +1753,9 @@
                         <segue destination="jAE-en-ni2" kind="relationship" relationship="rootViewController" id="e1j-yv-oqN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28a-8K-EXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="2145"/>
+            <point key="canvasLocation" x="593" y="1201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="McT-MU-BYd">
@@ -2125,7 +2208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hy5-6R-Vei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118" y="2137"/>
+            <point key="canvasLocation" x="2126" y="2145"/>
         </scene>
     </scenes>
     <resources>
@@ -2138,14 +2221,14 @@
         <image name="video_call_blue" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MGY-cg-ZEW"/>
-        <segue reference="8Jl-Zw-Ye6"/>
-        <segue reference="jYD-0a-BCF"/>
-        <segue reference="PMZ-9x-yXd"/>
-        <segue reference="RSt-96-ADv"/>
+        <segue reference="bBG-lQ-FJ5"/>
         <segue reference="p4f-H6-Dt3"/>
-        <segue reference="b4U-fY-nQf"/>
+        <segue reference="obm-v3-yad"/>
         <segue reference="Vfe-Pw-d2t"/>
         <segue reference="MwW-EZ-3s6"/>
+        <segue reference="RSt-96-ADv"/>
+        <segue reference="PMZ-9x-yXd"/>
+        <segue reference="jYD-0a-BCF"/>
+        <segue reference="8Jl-Zw-Ye6"/>
     </inferredMetricsTieBreakers>
 </document>
