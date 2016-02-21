@@ -36,6 +36,7 @@ class EmergencyCallViewController: UIViewController {
         
     }
             
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +44,10 @@ class EmergencyCallViewController: UIViewController {
         let initialLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)
         centerMapOnLocation(initialLocation)
         
+        
     }
+
+    
     
     func centerMapOnLocation(location: CLLocation) {
         let regionRadius: CLLocationDistance = 500

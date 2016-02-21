@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527814B81C793F8400846143 /* ReportEventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527814B71C793F8400846143 /* ReportEventMapViewController.swift */; };
 		5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */; };
 		5296EDF81C6C2A920084CE65 /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */; };
 		5296EDFA1C6C35EA0084CE65 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF91C6C35EA0084CE65 /* UserViewController.swift */; };
@@ -35,6 +36,8 @@
 		5296EE571C7446740084CE65 /* Event1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE561C7446740084CE65 /* Event1ViewController.swift */; };
 		5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE581C745AC40084CE65 /* MapEvent.swift */; };
 		5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */; };
+		5296EE5F1C7927780084CE65 /* UrgencySelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */; };
+		5296EE611C79337C0084CE65 /* ReportEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE601C79337C0084CE65 /* ReportEventCell.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -68,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		527814B71C793F8400846143 /* ReportEventMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventMapViewController.swift; sourceTree = "<group>"; };
 		5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
 		5296EDF91C6C35EA0084CE65 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 		5296EE561C7446740084CE65 /* Event1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event1ViewController.swift; sourceTree = "<group>"; };
 		5296EE581C745AC40084CE65 /* MapEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEvent.swift; sourceTree = "<group>"; };
 		5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event2ViewController.swift; sourceTree = "<group>"; };
+		5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrgencySelectorViewController.swift; sourceTree = "<group>"; };
+		5296EE601C79337C0084CE65 /* ReportEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventCell.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -219,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
+				527814B71C793F8400846143 /* ReportEventMapViewController.swift */,
 				5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */,
 				52FCBFBF1C6A691C00A4801A /* LoginViewController.swift */,
 				52FCBFB91C6A538C00A4801A /* RegisterViewController.swift */,
@@ -251,6 +258,8 @@
 				5296EE3A1C716AA80084CE65 /* NewsMapViewController.swift */,
 				5296EE461C72FABB0084CE65 /* NewsListTableViewController.swift */,
 				5296EE3C1C72F1F10084CE65 /* NewsTabBarController.swift */,
+				5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */,
+				5296EE601C79337C0084CE65 /* ReportEventCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +405,7 @@
 				5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */,
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
 				5296EE311C71396F0084CE65 /* ConfigVideoQualityViewController.swift in Sources */,
+				527814B81C793F8400846143 /* ReportEventMapViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,
 				5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */,
 				5296EE551C74235C0084CE65 /* Event.swift in Sources */,
@@ -413,6 +423,7 @@
 				5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
 				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,
+				5296EE5F1C7927780084CE65 /* UrgencySelectorViewController.swift in Sources */,
 				5296EE1C1C6F81DB0084CE65 /* ChangePasswordViewController.swift in Sources */,
 				5296EE121C6EDCF60084CE65 /* ModifyUserTableViewController.swift in Sources */,
 				5296EE2F1C712E740084CE65 /* ConfigThemeViewController.swift in Sources */,
@@ -420,6 +431,7 @@
 				5296EE181C6EF9DF0084CE65 /* ChangePhoneViewController.swift in Sources */,
 				5296EE0A1C6E3A900084CE65 /* EmergencyCallViewController.swift in Sources */,
 				5296EE141C6EF5650084CE65 /* ChangeNameViewController.swift in Sources */,
+				5296EE611C79337C0084CE65 /* ReportEventCell.swift in Sources */,
 				5296EE3D1C72F1F10084CE65 /* NewsTabBarController.swift in Sources */,
 				5296EE471C72FABB0084CE65 /* NewsListTableViewController.swift in Sources */,
 				5296EE531C7420A40084CE65 /* EventTableViewController.swift in Sources */,

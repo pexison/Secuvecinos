@@ -16,6 +16,7 @@ class ReportEventViewController: UITableViewController {
         showAlert(sender, title: title, message: message);
     }
     
+    @IBOutlet weak var foo: UILabel!
     @IBAction func cancel(sender: AnyObject) {
         let title = "Alerta"
         let message = "Seguro que no quiere realizar el reporte?"

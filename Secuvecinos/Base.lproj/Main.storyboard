@@ -1009,26 +1009,26 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="191"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv3-VK-ND7">
-                                <rect key="frame" x="138" y="515" width="45" height="45"/>
+                                <rect key="frame" x="41" y="498" width="50" height="50"/>
                                 <state key="normal" title="Colgar" image="hangup_call"/>
                                 <connections>
                                     <action selector="hangUpVoiceCall:" destination="jAE-en-ni2" eventType="touchUpInside" id="aKe-Y1-dND"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-39-raP">
-                                <rect key="frame" x="120" y="468" width="118" height="31"/>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMG-Hr-fL5">
-                                <rect key="frame" x="133" y="348" width="55" height="55"/>
+                                <rect key="frame" x="229" y="498" width="50" height="50"/>
                                 <state key="normal" title="Habilitar envio de video" image="video_call_blue"/>
                                 <connections>
                                     <segue destination="tam-d5-4rc" kind="push" id="Ipi-1o-hsP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKa-Lh-Wx5">
-                                <rect key="frame" x="84" y="468" width="30" height="30"/>
+                                <rect key="frame" x="41" y="460" width="30" height="30"/>
                                 <state key="normal" image="medium_volume_blue"/>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-39-raP">
+                                <rect key="frame" x="77" y="460" width="204" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2169,30 +2169,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RBX-LR-DR0">
-                                <rect key="frame" x="0.0" y="64" width="320" height="191"/>
+                                <rect key="frame" x="0.0" y="274" width="320" height="174"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9K-dN-ZG0">
-                                <rect key="frame" x="65" y="472" width="30" height="30"/>
-                                <state key="normal" image="medium_volume_blue"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-2T-koW">
-                                <rect key="frame" x="225" y="473" width="30" height="30"/>
-                                <state key="normal" image="no_video_blue"/>
-                                <connections>
-                                    <segue destination="jAE-en-ni2" kind="push" id="8Jl-Zw-Ye6"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="baK-ea-jYo">
-                                <rect key="frame" x="101" y="473" width="118" height="31"/>
-                            </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdR-FE-oqk">
-                                <rect key="frame" x="0.0" y="255" width="320" height="210"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="210"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apT-4Q-TKO">
-                                <rect key="frame" x="138" y="515" width="45" height="45"/>
+                                <rect key="frame" x="41" y="498" width="50" height="50"/>
                                 <state key="normal" title="Colgar" image="hangup_call"/>
                                 <connections>
                                     <action selector="hangUpVideoCall:" destination="tam-d5-4rc" eventType="touchUpInside" id="hnf-uE-H2i"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ke7-Q1-DeU">
+                                <rect key="frame" x="77" y="460" width="204" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OH-13-UjR">
+                                <rect key="frame" x="41" y="460" width="30" height="30"/>
+                                <state key="normal" image="medium_volume_blue"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-2T-koW">
+                                <rect key="frame" x="229" y="498" width="50" height="50"/>
+                                <state key="normal" image="no_video_blue"/>
+                                <connections>
+                                    <segue destination="jAE-en-ni2" kind="push" id="8Jl-Zw-Ye6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2221,14 +2221,14 @@
         <image name="video_call_blue" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bBG-lQ-FJ5"/>
+        <segue reference="IhE-Qh-IkR"/>
+        <segue reference="8Jl-Zw-Ye6"/>
+        <segue reference="PMZ-9x-yXd"/>
+        <segue reference="RSt-96-ADv"/>
+        <segue reference="jYD-0a-BCF"/>
         <segue reference="p4f-H6-Dt3"/>
         <segue reference="obm-v3-yad"/>
         <segue reference="Vfe-Pw-d2t"/>
         <segue reference="MwW-EZ-3s6"/>
-        <segue reference="RSt-96-ADv"/>
-        <segue reference="PMZ-9x-yXd"/>
-        <segue reference="jYD-0a-BCF"/>
-        <segue reference="8Jl-Zw-Ye6"/>
     </inferredMetricsTieBreakers>
 </document>
