@@ -13,6 +13,9 @@ class ReportEventMapViewController: UIViewController {
     
     @IBOutlet weak var MapView: MKMapView!
     
+    @IBAction func showSearchBar(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //let USBLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)

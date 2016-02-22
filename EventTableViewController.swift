@@ -59,8 +59,6 @@ class EventTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(Events[indexPath.row].title, forIndexPath: indexPath) as! NewsEventCell
         
-        print(cell)
-
         // Configure the cell...
         
         cell.title.text = Events[indexPath.row].title

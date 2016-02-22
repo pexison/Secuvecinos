@@ -38,6 +38,9 @@
 		5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */; };
 		5296EE5F1C7927780084CE65 /* UrgencySelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */; };
 		5296EE611C79337C0084CE65 /* ReportEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EE601C79337C0084CE65 /* ReportEventCell.swift */; };
+		529B4D2D1C7A2171007F11FE /* ReportTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */; };
+		529B4D2F1C7A262E007F11FE /* ReportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D2E1C7A262E007F11FE /* ReportType.swift */; };
+		529B4D311C7A5659007F11FE /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D301C7A5659007F11FE /* AddReportViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -102,6 +105,9 @@
 		5296EE5A1C745FB30084CE65 /* Event2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event2ViewController.swift; sourceTree = "<group>"; };
 		5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrgencySelectorViewController.swift; sourceTree = "<group>"; };
 		5296EE601C79337C0084CE65 /* ReportEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventCell.swift; sourceTree = "<group>"; };
+		529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTypeCell.swift; sourceTree = "<group>"; };
+		529B4D2E1C7A262E007F11FE /* ReportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportType.swift; sourceTree = "<group>"; };
+		529B4D301C7A5659007F11FE /* AddReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 				5296EE4C1C741D610084CE65 /* NewsEventCell.swift */,
 				5296EE521C7420A40084CE65 /* EventTableViewController.swift */,
 				5296EE541C74235C0084CE65 /* Event.swift */,
+				529B4D2E1C7A262E007F11FE /* ReportType.swift */,
 				5296EE221C6FA1260084CE65 /* ConfigViewController.swift */,
 				5296EE2A1C70FB070084CE65 /* ConfigUnitViewController.swift */,
 				5296EE581C745AC40084CE65 /* MapEvent.swift */,
@@ -259,7 +266,9 @@
 				5296EE461C72FABB0084CE65 /* NewsListTableViewController.swift */,
 				5296EE3C1C72F1F10084CE65 /* NewsTabBarController.swift */,
 				5296EE5E1C7927780084CE65 /* UrgencySelectorViewController.swift */,
+				529B4D301C7A5659007F11FE /* AddReportViewController.swift */,
 				5296EE601C79337C0084CE65 /* ReportEventCell.swift */,
+				529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -400,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5296EDF81C6C2A920084CE65 /* BackTableViewController.swift in Sources */,
+				529B4D2F1C7A262E007F11FE /* ReportType.swift in Sources */,
 				52FCBFC01C6A691C00A4801A /* LoginViewController.swift in Sources */,
 				5296EDFA1C6C35EA0084CE65 /* UserViewController.swift in Sources */,
 				5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */,
@@ -410,10 +420,12 @@
 				5296EE2B1C70FB070084CE65 /* ConfigUnitViewController.swift in Sources */,
 				5296EE551C74235C0084CE65 /* Event.swift in Sources */,
 				5296EE3B1C716AA80084CE65 /* NewsMapViewController.swift in Sources */,
+				529B4D311C7A5659007F11FE /* AddReportViewController.swift in Sources */,
 				5296EE081C6E37D00084CE65 /* NewsViewController.swift in Sources */,
 				52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */,
 				5296EE0C1C6E3BB30084CE65 /* SettingsViewController.swift in Sources */,
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
+				529B4D2D1C7A2171007F11FE /* ReportTypeCell.swift in Sources */,
 				52FCBFC21C6A6AF700A4801A /* HideKeyBoard.swift in Sources */,
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */,

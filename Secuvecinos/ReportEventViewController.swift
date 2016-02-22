@@ -10,20 +10,40 @@ import UIKit
 
 class ReportEventViewController: UITableViewController {
     
-    @IBAction func report(sender: AnyObject) {
+    var ReportTypes = [ReportType]()
+    
+    func loadSampleTypes() {
+        let illegal_parking = UIImage(named: "no_parking")!
+        let type1 = ReportType(title: "Aparcado ilegal", photo: illegal_parking)!
+        let pothole = UIImage(named: "pothole.png")!
+        let type2 = ReportType(title: "Hueco en la vía", photo: pothole)!
+        let garbage = UIImage(named: "litter_disposal")!
+        let type3 = ReportType(title: "Basura en la calle", photo: garbage)!
+        let traffic_light = UIImage(named: "traffic_light")!
+        let type4 = ReportType(title: "Semáforo dañado", photo: traffic_light)!
+        let grafitti = UIImage(named: "grafitti")!
+        let type5 = ReportType(title: "Grafitti", photo: grafitti)!
+        let other = UIImage(named: "question_mark")!
+        let type6 = ReportType(title: "Otros", photo: other)!
+        
+
+        ReportTypes += [type1, type2, type3, type4, type5, type6]
+    }
+    
+    
+    /*@IBAction func report(sender: AnyObject) {
         let title = "Éxito"
         let message = "Se realizo el reporte con éxito"
         showAlert(sender, title: title, message: message);
-    }
+    }*/
     
-    @IBOutlet weak var foo: UILabel!
-    @IBAction func cancel(sender: AnyObject) {
+    /*@IBAction func cancel(sender: AnyObject) {
         let title = "Alerta"
         let message = "Seguro que no quiere realizar el reporte?"
         showAlert(sender, title: title, message: message);
-    }
+    }*/
     
-    var TableArray = [String]()
+    //var TableArray = [String]()
     var urgencySelected = "Media"
     
     func showAlert(sender: AnyObject, title: String, message: String) {
@@ -60,7 +80,8 @@ class ReportEventViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        TableArray = ["Tipo", "Nombre", "Descripción", "Urgencia", "Posición"]
+        //TableArray = ["Tipo", "Nombre", "Descripción", "Urgencia", "Posición"]
+        loadSampleTypes()
         
         
     }
@@ -71,17 +92,26 @@ class ReportEventViewController: UITableViewController {
     }
     
     
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Number of rows in the section
-        return TableArray.count
+        return ReportTypes.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TableArray[indexPath.row], forIndexPath: indexPath) as UITableViewCell
-        
-        cell.textLabel?.text = TableArray[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier(ReportTypes[indexPath.row].title, forIndexPath: indexPath) as! ReportTypeCell
+
+
+        cell.title.text = ReportTypes[indexPath.row].title
+        cell.photo.image = ReportTypes[indexPath.row].photo
         return cell
     }
+    
     
 }
 

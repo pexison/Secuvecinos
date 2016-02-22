@@ -33,7 +33,12 @@ class UrgencySelectorViewController: UITableViewController {
         return TableArray.count
     }
     
-    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(TableArray[indexPath.row], forIndexPath: indexPath)
+        cell.textLabel?.text = TableArray[indexPath.item]
+        return cell
+    }
+   
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath)
@@ -56,21 +61,21 @@ class UrgencySelectorViewController: UITableViewController {
         selectedRow = indexPath.row
         
         dispatch_after(delayTime, dispatch_get_main_queue()) {
-            self.performSegueWithIdentifier("UrgencySelected", sender: self)
+            self.performSegueWithIdentifier("PrioritySelected", sender: self)
         }
         
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : ReportEventViewController = segue.destinationViewController as! ReportEventViewController;
+        let DestViewController : AddReportViewController = segue.destinationViewController as! AddReportViewController;
         switch(selectedRow) {
             case 0:
-                DestViewController.urgencySelected = "Alta";
+                DestViewController.selectedPriority = "Alta";
             case 1:
-                DestViewController.urgencySelected = "Media";
+                DestViewController.selectedPriority = "Media";
             case 2:
-                DestViewController.urgencySelected = "Baja";
+                DestViewController.selectedPriority = "Baja";
         default:
             print("None")
         }
