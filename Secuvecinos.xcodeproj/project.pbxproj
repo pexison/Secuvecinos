@@ -41,6 +41,7 @@
 		529B4D2D1C7A2171007F11FE /* ReportTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */; };
 		529B4D2F1C7A262E007F11FE /* ReportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D2E1C7A262E007F11FE /* ReportType.swift */; };
 		529B4D311C7A5659007F11FE /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D301C7A5659007F11FE /* AddReportViewController.swift */; };
+		529B4D331C7A90EA007F11FE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D321C7A90EA007F11FE /* SplashScreenViewController.swift */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -108,6 +109,7 @@
 		529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTypeCell.swift; sourceTree = "<group>"; };
 		529B4D2E1C7A262E007F11FE /* ReportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportType.swift; sourceTree = "<group>"; };
 		529B4D301C7A5659007F11FE /* AddReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
+		529B4D321C7A90EA007F11FE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				5296EE1F1C6F98130084CE65 /* profilePicture.jpg */,
 				52F61EEB1C67E178003B9C6D /* Assets.xcassets */,
 				52F61EED1C67E178003B9C6D /* LaunchScreen.storyboard */,
+				529B4D321C7A90EA007F11FE /* SplashScreenViewController.swift */,
 				52F61EF01C67E178003B9C6D /* Info.plist */,
 			);
 			path = Secuvecinos;
@@ -410,6 +413,7 @@
 			files = (
 				5296EDF81C6C2A920084CE65 /* BackTableViewController.swift in Sources */,
 				529B4D2F1C7A262E007F11FE /* ReportType.swift in Sources */,
+				529B4D331C7A90EA007F11FE /* SplashScreenViewController.swift in Sources */,
 				52FCBFC01C6A691C00A4801A /* LoginViewController.swift in Sources */,
 				5296EDFA1C6C35EA0084CE65 /* UserViewController.swift in Sources */,
 				5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */,
