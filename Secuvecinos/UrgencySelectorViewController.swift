@@ -30,12 +30,12 @@ class UrgencySelectorViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Number of rows in the section
-        return TableArray.count
+        return 3
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TableArray[indexPath.row], forIndexPath: indexPath)
-        cell.textLabel?.text = TableArray[indexPath.item]
+        let cell = tableView.dequeueReusableCellWithIdentifier(TableArray[indexPath.row], forIndexPath: indexPath) as UITableViewCell
+        cell.textLabel!.text = TableArray[indexPath.row]
         return cell
     }
    
@@ -51,6 +51,9 @@ class UrgencySelectorViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        print("Entreeeee")
+//        var cell = self.tableView.cellForRowAtIndexPath(indexPath)
+//        cell!.accessoryType = .Checkmark
         let section = indexPath.section
         let numberOfRows = tableView.numberOfRowsInSection(section)
         for row in 0..<numberOfRows {

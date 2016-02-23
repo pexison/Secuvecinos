@@ -9,6 +9,10 @@
 import UIKit
 
 class LoginViewController: HideKeyBoard, UITextFieldDelegate {
+
+    @IBOutlet weak var Google: UIImageView!
+    
+    @IBOutlet weak var Facebook: UIImageView!
     
     let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64( 4 * Double(NSEC_PER_SEC)))
     
@@ -42,6 +46,12 @@ class LoginViewController: HideKeyBoard, UITextFieldDelegate {
         self.user.delegate = self
         self.password.delegate = self
         // Do any additional setup after loading the view.
+        
+
+        
+        Google.image = UIImage(named: "google_plus")
+        Facebook.image = UIImage(named: "facebook")
+        
     }
     
     override func didReceiveMemoryWarning() {

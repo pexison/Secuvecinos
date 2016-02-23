@@ -26,10 +26,19 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
     
     @IBOutlet weak var confirmPassword: UITextField!
     
-    @IBOutlet weak var checkbox: UIButton!
+    @IBOutlet weak var terms: UIButton!
+    
+    @IBOutlet weak var nameImg: UIImageView!
+    @IBOutlet weak var identityImg: UIImageView!
+    @IBOutlet weak var emailImg: UIImageView!
+    @IBOutlet weak var phoneImg: UIImageView!
+    @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var passwordImg: UIImageView!
+    @IBOutlet weak var confirmPasswordImg: UIImageView!
+    @IBOutlet weak var googleImg: UIImageView!
+    @IBOutlet weak var facebookImg: UIImageView!
     
     @IBAction func register_proceed(sender: AnyObject) {
-        if status {
             var alertController:UIAlertController?
             alertController = UIAlertController(title: "Éxito",
                 message: "Se ha regitrado exitosamente",
@@ -43,28 +52,13 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
             self.presentViewController(alertController!,
                 animated: true,
                 completion: nil)
-        } else {
-            var alertController:UIAlertController?
-            alertController = UIAlertController(title: "Alerta",
-                message: "No se han aceptado los terminos y condiciones",
-                preferredStyle: .Alert)
-            
-            let action = UIAlertAction(title: "Ok",
-                style: UIAlertActionStyle.Default,
-                handler: nil)
-            
-            alertController?.addAction(action)
-            self.presentViewController(alertController!,
-                animated: true,
-                completion: nil)
-        }
     }
-    @IBAction func agreeTerms(sender: AnyObject) {
-        status = true;
-    }
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+
+        
         self.name.delegate = self;
         self.id.delegate = self;
         self.email.delegate = self;
@@ -72,6 +66,16 @@ class RegisterViewController: HideKeyBoard, UITextFieldDelegate {
         self.user.delegate = self;
         self.password.delegate = self;
         self.confirmPassword.delegate = self;
+
+        self.nameImg.image = UIImage(named:"name")
+        self.emailImg.image = UIImage(named:"email")
+        self.identityImg.image = UIImage(named:"identity")
+        self.phoneImg.image = UIImage(named:"phone")
+        self.userImg.image = UIImage(named:"login")
+        self.passwordImg.image = UIImage(named:"password")
+        self.confirmPasswordImg.image = UIImage(named:"password")
+        self.facebookImg.image = UIImage(named:"facebook")
+        self.googleImg.image = UIImage(named:"google_plus")
         
         // Do any additional setup after loading the view.
     }

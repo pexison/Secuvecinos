@@ -42,6 +42,8 @@
 		529B4D2F1C7A262E007F11FE /* ReportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D2E1C7A262E007F11FE /* ReportType.swift */; };
 		529B4D311C7A5659007F11FE /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D301C7A5659007F11FE /* AddReportViewController.swift */; };
 		529B4D331C7A90EA007F11FE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D321C7A90EA007F11FE /* SplashScreenViewController.swift */; };
+		529B4D351C7C8734007F11FE /* ReportEventPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B4D341C7C8734007F11FE /* ReportEventPhotoViewController.swift */; };
+		529B4D371C7CD08C007F11FE /* buho500.png in Resources */ = {isa = PBXBuildFile; fileRef = 529B4D361C7CD08C007F11FE /* buho500.png */; };
 		52E976331C6BA0E00073277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E976321C6BA0E00073277F /* SWRevealViewController.m */; };
 		52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE41C67E178003B9C6D /* AppDelegate.swift */; };
 		52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F61EE61C67E178003B9C6D /* ViewController.swift */; };
@@ -110,6 +112,8 @@
 		529B4D2E1C7A262E007F11FE /* ReportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportType.swift; sourceTree = "<group>"; };
 		529B4D301C7A5659007F11FE /* AddReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
 		529B4D321C7A90EA007F11FE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		529B4D341C7C8734007F11FE /* ReportEventPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventPhotoViewController.swift; sourceTree = "<group>"; };
+		529B4D361C7CD08C007F11FE /* buho500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buho500.png; sourceTree = "<group>"; };
 		52E976301C6BA0DF0073277F /* Secuvecinos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secuvecinos-Bridging-Header.h"; sourceTree = "<group>"; };
 		52E976311C6BA0E00073277F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		52E976321C6BA0E00073277F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		5296EE211C6F98310084CE65 /* ArtWork */ = {
 			isa = PBXGroup;
 			children = (
+				529B4D361C7CD08C007F11FE /* buho500.png */,
 			);
 			name = ArtWork;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				529B4D301C7A5659007F11FE /* AddReportViewController.swift */,
 				5296EE601C79337C0084CE65 /* ReportEventCell.swift */,
 				529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */,
+				529B4D341C7C8734007F11FE /* ReportEventPhotoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529B4D371C7CD08C007F11FE /* buho500.png in Resources */,
 				52F61EEF1C67E178003B9C6D /* LaunchScreen.storyboard in Resources */,
 				52F61EEC1C67E178003B9C6D /* Assets.xcassets in Resources */,
 				5296EE201C6F98130084CE65 /* profilePicture.jpg in Resources */,
@@ -434,6 +441,7 @@
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */,
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
+				529B4D351C7C8734007F11FE /* ReportEventPhotoViewController.swift in Sources */,
 				5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */,
 				5296EE4D1C741D610084CE65 /* NewsEventCell.swift in Sources */,
 				5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */,

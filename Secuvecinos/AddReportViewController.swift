@@ -10,8 +10,9 @@ import UIKit
 
 class AddReportViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var imageViewReportEvent: UIImageView!
     @IBOutlet weak var tableview: UITableView!
-    
+    let image : UIImage = UIImage(named: "Event1")!
     var Table : [String] = ["Ubicación", "Descripción", "Prioridad"]
     
     var selectedPriority = "Media"
@@ -22,7 +23,8 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
         // Do any additional setup after loading the view, typically from a nib.
         tableview.dataSource = self
         tableview.delegate = self
-
+        imageViewReportEvent.image = image
+        print (selectedPriority)
         
     }
     

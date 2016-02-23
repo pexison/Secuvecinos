@@ -14,14 +14,6 @@ class TermsViewController: UIViewController {
     
     @IBOutlet weak var terms: UITextView!
     
-    @IBAction func agreeBtn(sender: AnyObject) {
-        status = true;
-    }
-    
-    @IBAction func rejectBtn(sender: AnyObject) {
-        status = false;
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         terms.editable = false;
@@ -33,12 +25,7 @@ class TermsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : RegisterViewController = segue.destinationViewController as! RegisterViewController;
-      
-        DestViewController.status = status;
-    }
+
 
     /*
     // MARK: - Navigation

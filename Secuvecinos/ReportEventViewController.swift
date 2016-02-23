@@ -29,7 +29,11 @@ class ReportEventViewController: UITableViewController {
 
         ReportTypes += [type1, type2, type3, type4, type5, type6]
     }
-    
+   
+    @IBAction func cancel(sender: AnyObject) {
+        
+        showAlert(self, title: "Alerta", message: "Desea descartar los cambios?")
+    }
     
     /*@IBAction func report(sender: AnyObject) {
         let title = "Éxito"
@@ -57,7 +61,7 @@ class ReportEventViewController: UITableViewController {
         if (title=="Alerta") {
         let action = UIAlertAction(title: "Si",
             style: .Default,
-            handler: { action in self.performSegueWithIdentifier("CancelReport", sender: self) })
+            handler: { action in self.navigationController?.popViewControllerAnimated(true) })
         
         let action2 = UIAlertAction(title: "No",
             style: UIAlertActionStyle.Default,

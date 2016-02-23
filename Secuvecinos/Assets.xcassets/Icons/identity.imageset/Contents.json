@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iconathon_pothole_simple-black_512x512.png",
+      "filename" : "employee_card-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "employee_card-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "employee_card.png",
       "scale" : "3x"
     }
   ],
