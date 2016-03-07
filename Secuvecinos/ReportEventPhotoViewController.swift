@@ -26,7 +26,7 @@ class ReportEventPhotoViewController: UIViewController, UINavigationControllerDe
     @IBAction func deleteActualPhoto(sender: AnyObject) {
         imageView.image = image
     }
-    
+
     @IBAction func chosePhoto(sender: AnyObject) {
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self

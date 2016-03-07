@@ -10,10 +10,9 @@ import UIKit
 
 class AddReportViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var imageViewReportEvent: UIImageView!
     @IBOutlet weak var tableview: UITableView!
     let image : UIImage = UIImage(named: "Event1")!
-    var Table : [String] = ["Ubicación", "Descripción", "Prioridad"]
+    var Table : [String] = ["Ubicación", "Descripción", "Prioridad", "Foto"]
     
     var selectedPriority = "Media"
     
@@ -23,7 +22,7 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
         // Do any additional setup after loading the view, typically from a nib.
         tableview.dataSource = self
         tableview.delegate = self
-        imageViewReportEvent.image = image
+        //imageViewReportEvent.image = image
         print (selectedPriority)
         
     }
@@ -45,7 +44,22 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // your cell coding
         
+
+        
+        if Table[indexPath.row] == "Descripción" {
+            let cell = tableView.dequeueReusableCellWithIdentifier(Table[indexPath.row], forIndexPath: indexPath) as! EventDescriptionCell
+            cell.DescriptionLabel.text = "Descripción"
+            cell.DescriptionText.text = cell.textDescription
+            print (cell.textDescription)
+            return cell
+        } else if Table[indexPath.row] == "Foto" {
+            let cell = tableView.dequeueReusableCellWithIdentifier(Table[indexPath.row], forIndexPath: indexPath) as! EventPhotoCell
+            cell.EventPhoto.image = UIImage(named: "Event1")
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCellWithIdentifier(Table[indexPath.row], forIndexPath: indexPath)
+        
         cell.textLabel?.text = Table[indexPath.item]
         if Table[indexPath.row] == "Prioridad" {
             cell.detailTextLabel?.text = selectedPriority
@@ -54,5 +68,14 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 3 {
+            return 170
+        } else if indexPath.row == 1 {
+            return 120
+        } else{
+            return 44
+        }
+    }
     
 }
