@@ -16,11 +16,13 @@ class EventTableViewController: UITableViewController {
         let photo1 = UIImage(named: "Event1.jpg")!
         let status1 = UIImage(named: "OpenEvent.jpg")!
         let clockIcon = UIImage(named: "TimeEvent.jpg")
-        let event1 = Event(title: "Bote de Agua", details: "Cerca de la Av. Camino Real se encuentra un bote de agua de un hidrante dañado que necesita reparación con urgencia.", state: status1, priority: "!!!", timestamp: "hace 10 minutos", timeIcon: clockIcon, photo: photo1)!
+        let eventType1 = UIImage(named: "question_mark")
+        let event1 = Event(title: "Bote de Agua", details: "Cerca de la Av. Camino Real se encuentra un bote de agua de un hidrante dañado que necesita reparación con urgencia.", state: status1, priority: "!!!", timestamp: "hace 10 minutos", timeIcon: clockIcon, photo: photo1, eventType: eventType1)!
         
         let photo2 = UIImage(named: "Event2.jpg")!
         let status2 = UIImage(named: "ClosedEvent.jpg")!
-        let event2 = Event(title: "Grafitti en edificio", details: "En el edificio Coromon hay un grafitti que lee 'Baño' en letras azules.", state: status2, priority: "!!", timestamp: "hace 1 hora", timeIcon: clockIcon, photo: photo2)!
+        let eventType2 = UIImage(named: "grafitti")
+        let event2 = Event(title: "Grafitti en edificio", details: "En el edificio Coromon hay un grafitti que lee 'Baño' en letras azules.", state: status2, priority: "!!", timestamp: "hace 1 hora", timeIcon: clockIcon, photo: photo2, eventType: eventType2)!
         
         
         Events += [event1, event2]
@@ -68,6 +70,7 @@ class EventTableViewController: UITableViewController {
         cell.timestamp.text = Events[indexPath.row].timestamp
         cell.timeIcon.image = Events[indexPath.row].timeIcon
         cell.photo.image = Events[indexPath.row].photo
+        cell.eventType.image = Events[indexPath.row].eventType
 
         return cell
     }

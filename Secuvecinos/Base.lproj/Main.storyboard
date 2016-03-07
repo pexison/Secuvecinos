@@ -636,7 +636,6 @@
                                         <connections>
                                             <outlet property="DescriptionLabel" destination="1mt-nt-98z" id="Z8g-Nd-xlY"/>
                                             <outlet property="DescriptionText" destination="oEk-jh-E89" id="09k-OA-IcD"/>
-                                            <segue destination="ISN-Pa-Dh3" kind="push" id="01o-iY-iJQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Prioridad" textLabel="uiT-gP-aIH" detailTextLabel="HIp-yq-Ajh" style="IBUITableViewCellStyleValue1" id="cNE-IR-DIv">
@@ -676,20 +675,13 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-Ed-lBe">
                                                     <rect key="frame" x="100" y="8" width="121" height="113"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-Bq-0MF">
-                                                    <rect key="frame" x="70" y="129" width="180" height="25"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-Bq-0MF">
+                                                    <rect key="frame" x="106" y="129" width="108" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <state key="normal" image="camera_filled_white">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Seleccionar Foto">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <state key="normal" title="Editar foto">
+                                                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="41g-JF-DwC" kind="push" id="e40-iA-uGO"/>
@@ -798,53 +790,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnI-10-aGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4099" y="2367"/>
-        </scene>
-        <!--Hide Key Board-->
-        <scene sceneID="awh-Ij-hB3">
-            <objects>
-                <viewController id="ISN-Pa-Dh3" customClass="HideKeyBoard" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uk3-kQ-UaD"/>
-                        <viewControllerLayoutGuide type="bottom" id="Gyn-ET-Xcf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VYm-ze-j6P">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-Ux-tqJ">
-                                <rect key="frame" x="103" y="504" width="114" height="30"/>
-                                <state key="normal" title="Terminar edición"/>
-                                <connections>
-                                    <segue destination="6iY-mf-vJV" kind="push" id="Yic-0e-HS1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="084-rN-N0b">
-                                <rect key="frame" x="15" y="35" width="300" height="120"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Inserte la descripción asociada al evento a reportar">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-GE-Yka">
-                                <rect key="frame" x="20" y="306" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="QQa-Re-HN3"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lmO-TU-ZPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3704" y="2367"/>
         </scene>
         <!--Ubicación del evento-->
         <scene sceneID="PGY-FZ-f91">
@@ -1006,7 +951,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-BJ-grz">
                                 <rect key="frame" x="15" y="335" width="22" height="22"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="17/02/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-gq-Opj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hoy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-gq-Opj">
                                 <rect key="frame" x="48" y="365" width="115" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1057,7 +1002,7 @@
                     <connections>
                         <outlet property="Calendar" destination="Ap3-Wh-YhE" id="Cxp-vO-jig"/>
                         <outlet property="Clock" destination="XYF-BJ-grz" id="5SW-Y4-kQx"/>
-                        <outlet property="GotoMap" destination="GEI-VO-auf" id="nDW-DN-ZYu"/>
+                        <outlet property="EventType" destination="GEI-VO-auf" id="UMP-OT-cci"/>
                         <outlet property="Location" destination="VaZ-Gr-oj9" id="mjh-Fd-ec8"/>
                         <outlet property="Photo" destination="rXy-Wh-P6G" id="r0a-Hc-uHI"/>
                         <outlet property="State" destination="idA-bF-WZe" id="CfX-qK-yKV"/>
@@ -1085,13 +1030,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qh-mY-5Jj">
                                 <rect key="frame" x="15" y="305" width="22" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anl-fF-BLF">
                                 <rect key="frame" x="48" y="305" width="62" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:20 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-Ey-khP">
@@ -1103,7 +1048,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBH-Ou-Uyn">
                                 <rect key="frame" x="15" y="335" width="22" height="22"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16/02/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh9-K5-Jbe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hace 2 días" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh9-K5-Jbe">
                                 <rect key="frame" x="48" y="365" width="115" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1154,9 +1099,10 @@
                     <connections>
                         <outlet property="Calendar" destination="DEY-ro-mD0" id="gbi-X7-Kct"/>
                         <outlet property="Clock" destination="wBH-Ou-Uyn" id="PWz-IF-nJ3"/>
-                        <outlet property="GotoMap" destination="qMi-Ji-vBl" id="X5C-xd-KYN"/>
+                        <outlet property="EventType" destination="qMi-Ji-vBl" id="UmF-zc-FA0"/>
                         <outlet property="Location" destination="3sD-lT-sTh" id="gha-8u-uPn"/>
                         <outlet property="Photo" destination="1sj-0n-Sz3" id="ilP-Op-IW3"/>
+                        <outlet property="State" destination="0Pl-6A-DLl" id="uDG-bm-6NE"/>
                         <outlet property="state" destination="0Pl-6A-DLl" id="qjI-HH-W5L"/>
                     </connections>
                 </viewController>
@@ -1279,11 +1225,11 @@
             </objects>
             <point key="canvasLocation" x="3000" y="-465"/>
         </scene>
-        <!--Noticias-->
+        <!--Eventos-->
         <scene sceneID="3DE-OD-jMf">
             <objects>
                 <tabBarController id="WtK-AX-dUN" customClass="NewsTabBarController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Noticias" id="Bav-oo-Ba7">
+                    <navigationItem key="navigationItem" title="Eventos" id="Bav-oo-Ba7">
                         <barButtonItem key="backBarButtonItem" title="Cancelar" id="t4U-Qn-bGU"/>
                         <barButtonItem key="leftBarButtonItem" image="menu_filled_blue_25" id="8qE-zD-uZY"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qxz-JA-nf8">
@@ -1329,8 +1275,8 @@
                                             <rect key="frame" x="210" y="0.0" width="110" height="105"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-2P-O8G">
-                                            <rect key="frame" x="8" y="8" width="216" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <rect key="frame" x="32" y="8" width="192" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1358,10 +1304,14 @@
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question_mark" translatesAutoresizingMaskIntoConstraints="NO" id="UMp-Ph-CZZ">
+                                            <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="details" destination="P9z-TL-1hP" id="xTk-TF-8Z8"/>
+                                    <outlet property="eventType" destination="UMp-Ph-CZZ" id="C3d-3x-zVd"/>
                                     <outlet property="photo" destination="ADS-Wi-ZfO" id="MFx-Nq-OPp"/>
                                     <outlet property="priority" destination="4rg-1q-eHN" id="e1m-nJ-p6d"/>
                                     <outlet property="state" destination="L3x-Is-qa4" id="HNW-8W-p5F"/>
@@ -1382,8 +1332,8 @@
                                             <rect key="frame" x="210" y="0.0" width="110" height="105"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXr-8c-zYi">
-                                            <rect key="frame" x="8" y="8" width="216" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <rect key="frame" x="32" y="8" width="192" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1408,13 +1358,17 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKA-JD-ErF">
                                             <rect key="frame" x="32" y="73" width="20" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grafitti" translatesAutoresizingMaskIntoConstraints="NO" id="jrc-dc-CCo">
+                                            <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="details" destination="d0A-8f-ksS" id="DOC-LB-Tzb"/>
+                                    <outlet property="eventType" destination="jrc-dc-CCo" id="tDz-Tq-43E"/>
                                     <outlet property="photo" destination="DBg-jd-q8v" id="adf-ey-gYB"/>
                                     <outlet property="priority" destination="bKA-JD-ErF" id="7cN-Aw-Bvi"/>
                                     <outlet property="state" destination="9lE-qy-2cx" id="xbd-Ib-Gd2"/>
@@ -2523,11 +2477,11 @@
     </scenes>
     <resources>
         <image name="buho500.png" width="512" height="512"/>
-        <image name="camera_filled_white" width="25" height="25"/>
         <image name="delete_filled" width="25" height="25"/>
         <image name="edit_user_filled" width="25" height="25"/>
         <image name="exit" width="25" height="25"/>
         <image name="google_news_copyrighted_filled" width="25" height="25"/>
+        <image name="grafitti" width="25" height="25"/>
         <image name="hangup_call" width="100" height="100"/>
         <image name="list_filled" width="25" height="25"/>
         <image name="literature" width="25" height="25"/>
@@ -2536,6 +2490,7 @@
         <image name="menu_filled_blue_25" width="25" height="25"/>
         <image name="no_video_blue" width="100" height="100"/>
         <image name="phone_filled" width="25" height="25"/>
+        <image name="question_mark" width="25" height="25"/>
         <image name="settings_3_filled" width="25" height="25"/>
         <image name="video_call_blue" width="100" height="100"/>
     </resources>
@@ -2547,7 +2502,7 @@
         <segue reference="MwW-EZ-3s6"/>
         <segue reference="3GK-20-zjK"/>
         <segue reference="jYD-0a-BCF"/>
-        <segue reference="Yic-0e-HS1"/>
+        <segue reference="eY5-xi-JDM"/>
         <segue reference="8Jl-Zw-Ye6"/>
     </inferredMetricsTieBreakers>
 </document>

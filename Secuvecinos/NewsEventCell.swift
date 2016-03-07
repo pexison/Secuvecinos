@@ -17,7 +17,7 @@ class NewsEventCell: UITableViewCell {
     @IBOutlet weak var timestamp: UILabel!
     @IBOutlet weak var timeIcon: UIImageView!
     @IBOutlet weak var photo: UIImageView!
-    
+    @IBOutlet weak var eventType: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

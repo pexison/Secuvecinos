@@ -16,8 +16,9 @@ class Event {
     var timestamp: String
     var timeIcon: UIImage?
     var photo: UIImage?
+    var eventType: UIImage?
     
-    init?(title: String, details: String, state: UIImage?, priority: String, timestamp: String, timeIcon: UIImage?, photo: UIImage?) {
+    init?(title: String, details: String, state: UIImage?, priority: String, timestamp: String, timeIcon: UIImage?, photo: UIImage?, eventType: UIImage?) {
         // Initialize stored properties.
         self.title = title
         self.details = details
@@ -26,6 +27,7 @@ class Event {
         self.timestamp = timestamp
         self.timeIcon = timeIcon
         self.photo = photo
+        self.eventType = eventType
     }
     
 }

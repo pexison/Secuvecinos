@@ -14,7 +14,7 @@ class Event1ViewController: UIViewController {
     @IBOutlet weak var Clock: UIImageView!
     @IBOutlet weak var Calendar: UIImageView!
     @IBOutlet weak var Location: UIImageView!
-    @IBOutlet weak var GotoMap: UIImageView!
+    @IBOutlet weak var EventType: UIImageView!
     @IBOutlet weak var State: UIImageView!
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class Event1ViewController: UIViewController {
         Clock.image = UIImage(named: "TimeEvent")
         Calendar.image = UIImage(named: "calendar")
         Location.image = UIImage(named: "map_marker")
-        GotoMap.image = UIImage(named: "street_view")
+        EventType.image = UIImage(named: "question_mark")
         State.image = UIImage(named: "OpenEvent")
     }
     
