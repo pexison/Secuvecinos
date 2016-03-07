@@ -31,6 +31,7 @@ class ChangeProfilePictureViewController: UIViewController, UINavigationControll
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .PhotoLibrary
+        imagePicker.allowsEditing = true
         
         presentViewController(imagePicker, animated: true, completion: nil)
     }
@@ -39,6 +40,7 @@ class ChangeProfilePictureViewController: UIViewController, UINavigationControll
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .Camera
+        imagePicker.allowsEditing = true
         
         presentViewController(imagePicker, animated: true, completion: nil)
     }
