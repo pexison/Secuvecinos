@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5210B0921C8D0AB40060A83B /* EventDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */; };
 		5210B0941C8D14CF0060A83B /* EventPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */; };
+		5210B0981C8E6DBF0060A83B /* BackNeighbourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */; };
+		5210B09A1C8E6E280060A83B /* UserNeighbourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0991C8E6E280060A83B /* UserNeighbourViewController.swift */; };
 		527814B81C793F8400846143 /* ReportEventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527814B71C793F8400846143 /* ReportEventMapViewController.swift */; };
 		5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */; };
 		5296EDF81C6C2A920084CE65 /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */; };
@@ -81,6 +83,8 @@
 /* Begin PBXFileReference section */
 		5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionCell.swift; sourceTree = "<group>"; };
 		5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPhotoCell.swift; sourceTree = "<group>"; };
+		5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackNeighbourTableViewController.swift; sourceTree = "<group>"; };
+		5210B0991C8E6E280060A83B /* UserNeighbourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNeighbourViewController.swift; sourceTree = "<group>"; };
 		527814B71C793F8400846143 /* ReportEventMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventMapViewController.swift; sourceTree = "<group>"; };
 		5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 		52FCBFC31C6A744600A4801A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5210B0991C8E6E280060A83B /* UserNeighbourViewController.swift */,
 				52FCBFB61C6A4CF700A4801A /* LostPasswordViewController.swift */,
 				527814B71C793F8400846143 /* ReportEventMapViewController.swift */,
 				5296EE1B1C6F81DB0084CE65 /* ChangePasswordViewController.swift */,
@@ -283,6 +288,7 @@
 				529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */,
 				5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */,
 				5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */,
+				5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */,
 				529B4D341C7C8734007F11FE /* ReportEventPhotoViewController.swift */,
 			);
 			name = Controllers;
@@ -444,6 +450,7 @@
 				5296EE0C1C6E3BB30084CE65 /* SettingsViewController.swift in Sources */,
 				52FCBFB71C6A4CF700A4801A /* LostPasswordViewController.swift in Sources */,
 				529B4D2D1C7A2171007F11FE /* ReportTypeCell.swift in Sources */,
+				5210B0981C8E6DBF0060A83B /* BackNeighbourTableViewController.swift in Sources */,
 				52FCBFC21C6A6AF700A4801A /* HideKeyBoard.swift in Sources */,
 				5296EE1E1C6F90030084CE65 /* ChangeProfilePictureViewController.swift in Sources */,
 				5296EE331C7144E90084CE65 /* EmergencyCallVideoViewController.swift in Sources */,
@@ -453,6 +460,7 @@
 				5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */,
 				5296EE4D1C741D610084CE65 /* NewsEventCell.swift in Sources */,
 				5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */,
+				5210B09A1C8E6E280060A83B /* UserNeighbourViewController.swift in Sources */,
 				52FCBFBA1C6A538C00A4801A /* RegisterViewController.swift in Sources */,
 				5296EE231C6FA1260084CE65 /* ConfigViewController.swift in Sources */,
 				5296EE5F1C7927780084CE65 /* UrgencySelectorViewController.swift in Sources */,

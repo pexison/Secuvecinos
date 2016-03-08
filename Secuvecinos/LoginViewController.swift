@@ -21,6 +21,7 @@ class LoginViewController: HideKeyBoard, UITextFieldDelegate {
     @IBOutlet weak var user: UITextField!
     
     @IBOutlet weak var password: UITextField!
+
     
     @IBAction func enter(sender: AnyObject) {
         indicator.hidden = false
@@ -28,8 +29,18 @@ class LoginViewController: HideKeyBoard, UITextFieldDelegate {
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             self.indicator.stopAnimating()
             self.indicator.hidden = true
-            self.performSegueWithIdentifier("SessionStart", sender: sender)
+            
+            if self.user.text == "pedro.perez" {
+                self.performSegueWithIdentifier("StartSession", sender: sender)
+            } else {
+                self.performSegueWithIdentifier("StartSessionAlternate", sender: sender)
+            }
+            
         }
+    }
+    
+    @IBAction func login(sender: AnyObject) {
+        enter(sender)
     }
     
     @IBAction func facebookLogin(sender: AnyObject) {
@@ -51,6 +62,7 @@ class LoginViewController: HideKeyBoard, UITextFieldDelegate {
         
         Google.image = UIImage(named: "google_plus")
         Facebook.image = UIImage(named: "facebook")
+
         
     }
     
