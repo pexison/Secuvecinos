@@ -1401,6 +1401,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qdr-oW-SC7">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1Gx-R3-eL6" id="tuv-Ri-92V"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1410,6 +1413,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MapView" destination="qdr-oW-SC7" id="dDe-rf-8Af"/>
+                        <segue destination="G2g-p8-de1" kind="push" identifier="Event1DetailsSelected" id="x1z-Ca-T6q"/>
+                        <segue destination="jdD-gp-mid" kind="push" identifier="Event2DetailsSelected" id="IMh-TS-Ewd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4U-5v-jJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3096,7 +3101,7 @@
         <!--Bote de Agua-->
         <scene sceneID="PsI-2L-nOP">
             <objects>
-                <viewController id="tfW-3W-5m9" customClass="Event1ViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tfW-3W-5m9" customClass="NeighbourEvent1ViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rdb-tU-H6F"/>
                         <viewControllerLayoutGuide type="bottom" id="4MY-Gq-3Fx"/>
@@ -3181,10 +3186,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-aJ-00b">
-                                <rect key="frame" x="38" y="508" width="35" height="35"/>
-                                <state key="normal" image="map_marker_filled"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVe-cA-RFW">
                                 <rect key="frame" x="15" y="455" width="290" height="57"/>
                                 <attributedString key="attributedText">
@@ -3198,6 +3199,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-aJ-00b">
+                                <rect key="frame" x="38" y="508" width="35" height="35"/>
+                                <state key="normal" image="map_marker_filled"/>
+                                <connections>
+                                    <action selector="searchRouteEvent1:" destination="tfW-3W-5m9" eventType="touchUpInside" id="Ah8-i5-oud"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3220,7 +3228,7 @@
         <!--Grafitti en edificio-->
         <scene sceneID="OEC-Il-g5y">
             <objects>
-                <viewController id="0Gh-rb-dGD" customClass="Event2ViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Gh-rb-dGD" customClass="NeighbourEvent2ViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IC0-HR-HV2"/>
                         <viewControllerLayoutGuide type="bottom" id="H1p-XI-VP6"/>
@@ -3305,6 +3313,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfK-gh-KWa">
                                 <rect key="frame" x="38" y="508" width="35" height="35"/>
                                 <state key="normal" image="map_marker_filled"/>
+                                <connections>
+                                    <action selector="searchRouteEvent2:" destination="0Gh-rb-dGD" eventType="touchUpInside" id="4VS-V0-Pfm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0I-AX-m2g">
                                 <rect key="frame" x="240" y="508" width="35" height="35"/>
@@ -3510,7 +3521,7 @@
         <!--Mapa-->
         <scene sceneID="tL4-sc-aU7">
             <objects>
-                <viewController id="tBG-c7-hYC" customClass="NewsMapViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tBG-c7-hYC" customClass="NeighbourNewsMapViewController" customModule="Secuvecinos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OvE-c4-shs"/>
                         <viewControllerLayoutGuide type="bottom" id="Ene-Uz-Hkn"/>
@@ -3521,6 +3532,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zZG-Ir-Dak">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tBG-c7-hYC" id="Gzv-mp-ZJQ"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3530,6 +3544,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MapView" destination="zZG-Ir-Dak" id="w4d-F7-A1s"/>
+                        <segue destination="tfW-3W-5m9" kind="push" identifier="Event1DetailsSelected" id="0ci-Gy-9md"/>
+                        <segue destination="0Gh-rb-dGD" kind="push" identifier="Event2DetailsSelected" id="sRi-5Y-hN3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCR-Q0-CK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3943,15 +3959,19 @@
         <segue reference="MhF-YB-PDR"/>
         <segue reference="M4v-n1-sV2"/>
         <segue reference="erQ-aX-60l"/>
+        <segue reference="sRi-5Y-hN3"/>
+        <segue reference="0ci-Gy-9md"/>
+        <segue reference="2TJ-HU-FRj"/>
         <segue reference="Y6e-wu-VjG"/>
         <segue reference="Cav-Nu-FBJ"/>
         <segue reference="GPK-O3-Rzf"/>
-        <segue reference="SC6-qh-wfz"/>
+        <segue reference="IMh-TS-Ewd"/>
+        <segue reference="x1z-Ca-T6q"/>
         <segue reference="e1j-yv-oqN"/>
         <segue reference="09Z-6E-rvV"/>
         <segue reference="iTo-if-azg"/>
-        <segue reference="2TJ-HU-FRj"/>
+        <segue reference="PMZ-9x-yXd"/>
         <segue reference="e40-iA-uGO"/>
-        <segue reference="nX0-FP-WUT"/>
+        <segue reference="Caa-vI-43i"/>
     </inferredMetricsTieBreakers>
 </document>

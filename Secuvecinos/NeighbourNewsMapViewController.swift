@@ -1,17 +1,20 @@
 //
-//  NewsMapViewController.swift
+//  NeighbourNewsMapViewController.swift
 //  Secuvecinos
 //
-//  Created by John on 14/2/16.
+//  Created by John on 15/3/16.
 //  Copyright © 2016 John. All rights reserved.
 //
 
 import UIKit
 import MapKit
+import AddressBook
 
-class NewsMapViewController: UIViewController {
+class NeighbourNewsMapViewController: UIViewController {
     
     @IBOutlet weak var MapView: MKMapView!
+    
+    var selectedPin:MKPlacemark? = nil
     
     
     override func viewDidLoad() {
@@ -24,7 +27,7 @@ class NewsMapViewController: UIViewController {
         //let USBLocation = CLLocation(latitude: 10.409297, longitude: -66.883061)
         let initialLocation = CLLocation(latitude: 10.423177, longitude: -66.824852)
         centerMapOnLocation(initialLocation)
-  
+        
         let annotationView = MKAnnotationView()
         let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure) as UIButton
         annotationView.rightCalloutAccessoryView = detailButton
@@ -44,6 +47,16 @@ class NewsMapViewController: UIViewController {
         MapView.addAnnotation(pinEvent2)
         
         
+        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Event1DetailsSelected" {
+            let DestViewController : NeighbourEvent1ViewController = segue.destinationViewController as! NeighbourEvent1ViewController;
+            DestViewController.selectedPin = selectedPin!
+        } else if segue.identifier == "Event2DetailsSelected" {
+            let DestViewController : NeighbourEvent2ViewController = segue.destinationViewController as! NeighbourEvent2ViewController;
+            DestViewController.selectedPin = selectedPin!
+        }
         
     }
     
@@ -68,7 +81,7 @@ class NewsMapViewController: UIViewController {
     
 }
 
-extension NewsMapViewController : MKMapViewDelegate {
+extension NeighbourNewsMapViewController : MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
@@ -89,5 +102,5 @@ extension NewsMapViewController : MKMapViewDelegate {
         return pinView
     }
     
-
+    
 }

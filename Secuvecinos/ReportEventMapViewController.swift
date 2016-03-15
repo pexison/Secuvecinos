@@ -131,7 +131,5 @@ extension ReportEventMapViewController : MKMapViewDelegate {
         pinView?.rightCalloutAccessoryView = button
         selectedLocation = annotation.title!
         return pinView
-        
-
     }
 }
