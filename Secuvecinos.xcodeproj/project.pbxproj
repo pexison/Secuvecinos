@@ -12,6 +12,7 @@
 		5210B0981C8E6DBF0060A83B /* BackNeighbourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */; };
 		5210B09A1C8E6E280060A83B /* UserNeighbourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0991C8E6E280060A83B /* UserNeighbourViewController.swift */; };
 		527814B81C793F8400846143 /* ReportEventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527814B71C793F8400846143 /* ReportEventMapViewController.swift */; };
+		52836D6E1C97AC610049AAC8 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836D6D1C97AC610049AAC8 /* LocationSearchTable.swift */; };
 		5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */; };
 		5296EDF81C6C2A920084CE65 /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */; };
 		5296EDFA1C6C35EA0084CE65 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296EDF91C6C35EA0084CE65 /* UserViewController.swift */; };
@@ -86,6 +87,7 @@
 		5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackNeighbourTableViewController.swift; sourceTree = "<group>"; };
 		5210B0991C8E6E280060A83B /* UserNeighbourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNeighbourViewController.swift; sourceTree = "<group>"; };
 		527814B71C793F8400846143 /* ReportEventMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportEventMapViewController.swift; sourceTree = "<group>"; };
+		52836D6D1C97AC610049AAC8 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		5296EDF31C6BB3100084CE65 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5296EDF71C6C2A920084CE65 /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
 		5296EDF91C6C35EA0084CE65 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				529B4D301C7A5659007F11FE /* AddReportViewController.swift */,
 				5296EE601C79337C0084CE65 /* ReportEventCell.swift */,
 				529B4D2C1C7A2171007F11FE /* ReportTypeCell.swift */,
+				52836D6D1C97AC610049AAC8 /* LocationSearchTable.swift */,
 				5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */,
 				5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */,
 				5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */,
@@ -457,6 +460,7 @@
 				5296EE161C6EF88A0084CE65 /* ChangeEmailViewController.swift in Sources */,
 				5210B0921C8D0AB40060A83B /* EventDescriptionCell.swift in Sources */,
 				529B4D351C7C8734007F11FE /* ReportEventPhotoViewController.swift in Sources */,
+				52836D6E1C97AC610049AAC8 /* LocationSearchTable.swift in Sources */,
 				5296EE5B1C745FB30084CE65 /* Event2ViewController.swift in Sources */,
 				5296EE4D1C741D610084CE65 /* NewsEventCell.swift in Sources */,
 				5296EE591C745AC40084CE65 /* MapEvent.swift in Sources */,

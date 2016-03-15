@@ -15,6 +15,8 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
     var Table : [String] = ["Ubicación", "Descripción", "Prioridad", "Foto"]
     
     var selectedPriority = "Media"
+    var selectedLocation = ""
+    var selectedImage = UIImage(named: "Event1")
     
     
     override func viewDidLoad() {
@@ -54,7 +56,7 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
             return cell
         } else if Table[indexPath.row] == "Foto" {
             let cell = tableView.dequeueReusableCellWithIdentifier(Table[indexPath.row], forIndexPath: indexPath) as! EventPhotoCell
-            cell.EventPhoto.image = UIImage(named: "Event1")
+            cell.EventPhoto.image = selectedImage
             return cell
         }
         
@@ -63,6 +65,8 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
         cell.textLabel?.text = Table[indexPath.item]
         if Table[indexPath.row] == "Prioridad" {
             cell.detailTextLabel?.text = selectedPriority
+        } else if Table[indexPath.row] == "Ubicación" {
+            cell.detailTextLabel?.text = selectedLocation
         }
         
         return cell
