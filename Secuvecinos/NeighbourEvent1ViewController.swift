@@ -20,13 +20,15 @@ class NeighbourEvent1ViewController: UIViewController {
     @IBOutlet weak var State: UIImageView!
 
     let addressDictionary = [String(kABPersonAddressStreetKey): "Prueba"]
-    var selectedPin:MKPlacemark? = MKPlacemark(coordinate: CLLocationCoordinate2DMake(10.422913, -66.823761), addressDictionary: nil)
+    var selectedAnnotation:MKAnnotation?
+
 
     
     
     
     @IBAction func searchRouteEvent1(sender: AnyObject) {
-        if let selectedPin = selectedPin {
+        if let selectedAnnotation = self.selectedAnnotation {
+            let selectedPin = MKPlacemark(coordinate: (selectedAnnotation.coordinate), addressDictionary:nil)
             let mapItem = MKMapItem(placemark: selectedPin)
             let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
             mapItem.openInMapsWithLaunchOptions(launchOptions)

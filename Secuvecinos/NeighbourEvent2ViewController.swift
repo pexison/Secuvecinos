@@ -22,10 +22,12 @@ class NeighbourEvent2ViewController: UIViewController {
     
 
     let addressDictionary = [String(kABPersonAddressStreetKey): "Prueba"]
-    var selectedPin:MKPlacemark? = MKPlacemark(coordinate: CLLocationCoordinate2DMake(10.422560, -66.826183), addressDictionary: nil)
+    var selectedAnnotation:MKAnnotation?
+
     
     @IBAction func searchRouteEvent2(sender: AnyObject) {
-        if let selectedPin = selectedPin {
+        if let selectedAnnotation = self.selectedAnnotation {
+            let selectedPin = MKPlacemark(coordinate: (selectedAnnotation.coordinate), addressDictionary:nil)
             let mapItem = MKMapItem(placemark: selectedPin)
             let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
             mapItem.openInMapsWithLaunchOptions(launchOptions)

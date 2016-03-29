@@ -14,7 +14,7 @@ class NeighbourNewsMapViewController: UIViewController {
     
     @IBOutlet weak var MapView: MKMapView!
     
-    var selectedPin:MKPlacemark? = nil
+    var selectedAnnotation:MKAnnotation?
     
     
     override func viewDidLoad() {
@@ -50,22 +50,22 @@ class NeighbourNewsMapViewController: UIViewController {
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Event1DetailsSelected" {
-            let DestViewController : NeighbourEvent1ViewController = segue.destinationViewController as! NeighbourEvent1ViewController;
-            DestViewController.selectedPin = selectedPin!
-        } else if segue.identifier == "Event2DetailsSelected" {
-            let DestViewController : NeighbourEvent2ViewController = segue.destinationViewController as! NeighbourEvent2ViewController;
-            DestViewController.selectedPin = selectedPin!
+        if segue.identifier == "NeighbourEvent1DetailsSelected" {
+            let DestViewController : NeighbourEvent1ViewController = segue.destinationViewController as! NeighbourEvent1ViewController
+            DestViewController.selectedAnnotation = self.selectedAnnotation!
+        } else if segue.identifier == "NeighbourEvent2DetailsSelected" {
+            let DestViewController : NeighbourEvent2ViewController = segue.destinationViewController as! NeighbourEvent2ViewController
+            DestViewController.selectedAnnotation = self.selectedAnnotation!
         }
         
     }
     
     func makeSegueEvent1() {
-        self.performSegueWithIdentifier("Event1DetailsSelected", sender: self)
+        self.performSegueWithIdentifier("NeighbourEvent1DetailsSelected", sender: self)
     }
     
     func makeSegueEvent2() {
-        self.performSegueWithIdentifier("Event2DetailsSelected", sender: self)
+        self.performSegueWithIdentifier("NeighbourEvent2DetailsSelected", sender: self)
     }
     
     func centerMapOnLocation(location: CLLocation) {
@@ -102,5 +102,12 @@ extension NeighbourNewsMapViewController : MKMapViewDelegate {
         return pinView
     }
     
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        self.selectedAnnotation = view.annotation!
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        self.selectedAnnotation = view.annotation!
+    }
     
 }

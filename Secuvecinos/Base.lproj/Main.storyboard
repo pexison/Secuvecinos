@@ -1706,7 +1706,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Nombre" textLabel="DEG-fW-xaI" detailTextLabel="e2d-X2-PoD" style="IBUITableViewCellStyleValue1" id="wig-Fl-kDD">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wig-Fl-kDD" id="zaG-h3-bap">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1733,7 +1733,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Correo" textLabel="qky-E3-aR9" detailTextLabel="kRa-p2-Rj8" style="IBUITableViewCellStyleValue1" id="6gJ-f6-HPX">
-                                <rect key="frame" x="0.0" y="136" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6gJ-f6-HPX" id="3NN-ON-ZMP">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1760,7 +1760,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Teléfono" textLabel="3As-MZ-Zpc" detailTextLabel="OLe-D4-CrN" style="IBUITableViewCellStyleValue1" id="Bu3-yH-mir">
-                                <rect key="frame" x="0.0" y="180" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bu3-yH-mir" id="kxe-cb-zL0">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1787,7 +1787,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Contraseña" textLabel="QYB-gS-fyc" style="IBUITableViewCellStyleDefault" id="AUc-fF-XIH">
-                                <rect key="frame" x="0.0" y="224" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AUc-fF-XIH" id="7Di-xU-jnp">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1807,7 +1807,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Seleccionar Foto" textLabel="w8N-wy-klD" style="IBUITableViewCellStyleDefault" id="y9a-ex-nhO">
-                                <rect key="frame" x="0.0" y="268" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="204" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y9a-ex-nhO" id="fKw-s5-FpJ">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -3544,8 +3544,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MapView" destination="zZG-Ir-Dak" id="w4d-F7-A1s"/>
-                        <segue destination="tfW-3W-5m9" kind="push" identifier="Event1DetailsSelected" id="0ci-Gy-9md"/>
-                        <segue destination="0Gh-rb-dGD" kind="push" identifier="Event2DetailsSelected" id="sRi-5Y-hN3"/>
+                        <segue destination="tfW-3W-5m9" kind="push" identifier="NeighbourEvent1DetailsSelected" id="0ci-Gy-9md"/>
+                        <segue destination="0Gh-rb-dGD" kind="push" identifier="NeighbourEvent2DetailsSelected" id="sRi-5Y-hN3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCR-Q0-CK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3955,23 +3955,23 @@
         <image name="video_call_blue" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lit-P2-Zd2"/>
+        <segue reference="09Z-6E-rvV"/>
+        <segue reference="erQ-aX-60l"/>
         <segue reference="MhF-YB-PDR"/>
         <segue reference="M4v-n1-sV2"/>
-        <segue reference="erQ-aX-60l"/>
-        <segue reference="sRi-5Y-hN3"/>
-        <segue reference="0ci-Gy-9md"/>
-        <segue reference="2TJ-HU-FRj"/>
         <segue reference="Y6e-wu-VjG"/>
         <segue reference="Cav-Nu-FBJ"/>
         <segue reference="GPK-O3-Rzf"/>
-        <segue reference="IMh-TS-Ewd"/>
-        <segue reference="x1z-Ca-T6q"/>
         <segue reference="e1j-yv-oqN"/>
-        <segue reference="09Z-6E-rvV"/>
+        <segue reference="x1z-Ca-T6q"/>
+        <segue reference="IMh-TS-Ewd"/>
+        <segue reference="sRi-5Y-hN3"/>
+        <segue reference="0ci-Gy-9md"/>
+        <segue reference="49G-xM-Qrn"/>
+        <segue reference="lit-P2-Zd2"/>
+        <segue reference="Caa-vI-43i"/>
+        <segue reference="e40-iA-uGO"/>
         <segue reference="iTo-if-azg"/>
         <segue reference="PMZ-9x-yXd"/>
-        <segue reference="e40-iA-uGO"/>
-        <segue reference="Caa-vI-43i"/>
     </inferredMetricsTieBreakers>
 </document>
