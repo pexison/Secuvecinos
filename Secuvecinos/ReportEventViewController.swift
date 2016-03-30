@@ -12,6 +12,8 @@ class ReportEventViewController: UITableViewController {
     
     var ReportTypes = [ReportType]()
     
+    var selectedEvent = ""
+    
     func loadSampleTypes() {
         let illegal_parking = UIImage(named: "no_parking")!
         let type1 = ReportType(title: "Aparcado ilegal", photo: illegal_parking)!
@@ -81,6 +83,11 @@ class ReportEventViewController: UITableViewController {
             completion: nil)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let DestViewController : AddReportViewController = segue.destinationViewController as! AddReportViewController
+        DestViewController.selectedEvent = self.selectedEvent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -114,6 +121,12 @@ class ReportEventViewController: UITableViewController {
         cell.title.text = ReportTypes[indexPath.row].title
         cell.photo.image = ReportTypes[indexPath.row].photo
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.dequeueReusableCellWithIdentifier(ReportTypes[indexPath.row].title, forIndexPath: indexPath) as! ReportTypeCell
+        self.selectedEvent = cell.title.text!
+        self.performSegueWithIdentifier("reportTypeSelected", sender: self)
     }
     
     

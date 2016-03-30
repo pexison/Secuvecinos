@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520608701CABFA590093B7B8 /* GenericEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206086F1CABFA590093B7B8 /* GenericEventViewController.swift */; };
 		5210B0921C8D0AB40060A83B /* EventDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */; };
 		5210B0941C8D14CF0060A83B /* EventPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */; };
 		5210B0981C8E6DBF0060A83B /* BackNeighbourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */; };
@@ -85,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5206086F1CABFA590093B7B8 /* GenericEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericEventViewController.swift; sourceTree = "<group>"; };
 		5210B0911C8D0AB40060A83B /* EventDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionCell.swift; sourceTree = "<group>"; };
 		5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPhotoCell.swift; sourceTree = "<group>"; };
 		5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackNeighbourTableViewController.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				5210B0931C8D14CF0060A83B /* EventPhotoCell.swift */,
 				52836D771C97D5D80049AAC8 /* NeighbourNewsMapViewController.swift */,
 				5210B0971C8E6DBF0060A83B /* BackNeighbourTableViewController.swift */,
+				5206086F1CABFA590093B7B8 /* GenericEventViewController.swift */,
 				529B4D341C7C8734007F11FE /* ReportEventPhotoViewController.swift */,
 			);
 			name = Controllers;
@@ -452,6 +455,7 @@
 				5296EDFA1C6C35EA0084CE65 /* UserViewController.swift in Sources */,
 				5296EDF41C6BB3100084CE65 /* WelcomeViewController.swift in Sources */,
 				52F61EE71C67E178003B9C6D /* ViewController.swift in Sources */,
+				520608701CABFA590093B7B8 /* GenericEventViewController.swift in Sources */,
 				5296EE311C71396F0084CE65 /* ConfigVideoQualityViewController.swift in Sources */,
 				527814B81C793F8400846143 /* ReportEventMapViewController.swift in Sources */,
 				52F61EE51C67E178003B9C6D /* AppDelegate.swift in Sources */,

@@ -14,6 +14,8 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
     let image : UIImage = UIImage(named: "Event1")!
     var Table : [String] = ["Ubicación", "Descripción", "Prioridad", "Foto"]
     
+    var selectedEvent = ""
+    
     var selectedPriority = "Media"
     var selectedLocation = ""
     var selectedImage = UIImage(named: "Event1")
@@ -25,7 +27,9 @@ class AddReportViewController: UIViewController, UITableViewDataSource, UITableV
         tableview.dataSource = self
         tableview.delegate = self
         //imageViewReportEvent.image = image
-        print (selectedPriority)
+        print(self.selectedEvent)
+        self.title = self.selectedEvent
+        
         
     }
     
